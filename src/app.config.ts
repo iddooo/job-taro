@@ -4,7 +4,8 @@ export default {
     'pages/shopping/index',
     'pages/message/index',
     'pages/mine/index',
-    'pages/jobDetail/index'
+    'pages/jobDetail/index',
+    'pages/company/index'
   ],
   window: {
     backgroundTextStyle: 'light',

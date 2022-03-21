@@ -49,10 +49,11 @@
         <view class="font-sub mb46">2、对书法有了解或者热爱书法</view>
     </view>
 
+    <!-- 公司 -->
     <view class="font-h2">发布企业</view>
 
     <view class="content">
-        <view class="company">
+        <view class="company" @tap="goCompany">
             <image class="com-icon" src=""></image>
             <view class="font-com">教育机构</view>
             <view class="font-sub font24">教育有限公司  B轮  150-500人</view>
@@ -70,8 +71,8 @@
 
     <view class="font-h2 mb24 active">相似职位推荐</view>
     
-    <!-- JobCard -->
-    <view class="job-card" @tap="goJobDetail">
+    <!-- JobCard start-->
+    <view class="job-card">
         <view class="flex-ct-btw">
             <view class="title">招运营专员</view>
             <view class="flex-btm red">
@@ -126,6 +127,8 @@
         </view>
 
     </view>
+    <!-- JobCard end-->
+
 
     <view class="btns flex-ct-btw">
         <view class="btn1">
@@ -142,9 +145,7 @@
 
 <script>
 // 按需引入, 更小的应用体积
-import { AtButton} from "taro-ui-vue";
-import "taro-ui-vue/dist/style/components/button.scss";
-import "./index.scss";
+import Taro from '@tarojs/taro'
 
 definePageConfig({
   navigationBarTitleText: "岗位详情"
@@ -152,10 +153,14 @@ definePageConfig({
 
 export default {
   components: {
-    AtButton
   },
   data() {
     return {
+        goCompany(){
+            Taro.navigateTo({
+            url: '/pages/company/index'
+        })
+        }
     };
   },
   methods: {
