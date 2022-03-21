@@ -1,8 +1,14 @@
 @import '../../app.scss';
+.index{
+  background: #f5f6fa;
+  min-height: 100vh;
+
+}
 // 导航栏
 .nav-box{
     padding: 20px 30px;
     @include flex(flex-start);
+    background-color: #fff;
     .loc-box{
         @include flex(flex-start);
         font-size: 32px;
@@ -44,13 +50,14 @@
 }
 // 轮播图
 .swiper-container {
-    width: 680rpx;
-    height: 306rpx;
-    margin: 20px auto;
-    border-radius: 16rpx;
-    overflow: hidden;
+    width: 702px;
+    height: 244px;
     transform: translateY(0);
+    background: #fff;
+    padding: 24px ;
     .swiper,.banner-img{
+        border-radius: 18px;
+        overflow: hidden;
         width: 100%;
         height: 100%;
         background-color: #eee;
@@ -59,6 +66,7 @@
 // 筛选
 .filter-box{
     padding: 20px 32px;
+    background-color: #fff;
     .r-item{
         margin-right: 68px;
         font-size: 28px;
@@ -127,15 +135,14 @@
 
 // JobCard
 .job-box{
-    padding: 16px 16px 0 16px;
-    overflow: hidden;
-    background-color: #F5F6FA;
+    margin: 16px 16px 0 16px;
     .job-card{
         margin-bottom: 16px;
         padding-top: 24px;
         padding-bottom: 34px;
         padding-left: 25px;
         background-color: #fff;
+        border-radius: 12px;
         .title{
             font-size: 32px;
             font-family: PingFangSC-Regular, PingFang SC;
@@ -252,6 +259,8 @@
     .content{
         width: 100%;
         flex: 1;
+        box-sizing: border-box;
+        padding-bottom: 48px;
     }
 }
 .post{
@@ -295,7 +304,7 @@
     }
 }
 .filter{
-    .f-title{
+    .dailog-title{
         height: 152px;
     }
     .type-box{
@@ -328,6 +337,45 @@
             }
         }
     }
+    .content{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        .btns{
+            height: 88px;
+            padding: 32px 32px 0;
+            .btn1{
+                width: 236px;
+                height: 88px;
+                background: #F5F6FA;
+                border-radius: 28px; 
+                font-size: 30px;
+                font-family: PingFangSC-Medium, PingFang SC;
+                font-weight: 500;
+                color: #0F1D36;
+                line-height: 42px;
+                image{
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 20px;
+                    background-color: #eee;
+                }
+            }
+            .btn2{
+                width: 432px;
+                height: 88px;
+                background: #00CC88;
+                border-radius: 28px;
+                color: #fff;
+            }
+        }
+        .types{
+            width: 100%;
+            flex: 1;
+            overflow-y: scroll;
+        }
+    }
+    
 }
 
 

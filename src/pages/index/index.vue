@@ -149,6 +149,13 @@
                     <view class="item">分拣员</view>
                     <view class="item">分拣员</view>
                     <view class="item">分拣员</view>
+                    <view class="item">分拣员</view>
+                    <view class="item">分拣员</view>
+                    <view class="item">分拣员</view>
+                    <view class="item">分拣员</view>
+                    <view class="item">分拣员</view>
+                    <view class="item">分拣员</view>
+                    <view class="item">分拣员</view>
                 </scroll-view>
             </view>
         </view>
@@ -160,42 +167,53 @@
         <view class="dailog filter">
             <view class="dailog-title">筛选</view>
             <view class="cancel" @tap="isShowFilters = false">取消</view>
-            <scroll-view :scroll-y="true"  class="content">
-                <view class="type-box">
-                    <view class="item-title">结算方式</view>
-                    <view class="flex-ct-wrap">
-                        <view class="item active">不限</view>
-                        <view class="item">日结</view>
-                        <view class="item">周结</view>
-                        <view class="item">月结</view>
-                        <view class="item">完工结算</view>
+            <view class="content">
+                <scroll-view :scroll-y="true"  class="types" @tap="handleClick">
+                    <view class="type-box">
+                        <view class="item-title">结算方式</view>
+                        <view class="flex-ct-wrap">
+                            <view class="item active">不限</view>
+                            <view class="item">日结</view>
+                            <view class="item">周结</view>
+                            <view class="item">月结</view>
+                            <view class="item">完工结算</view>
+                        </view>
                     </view>
-                </view>
-                <view class="type-box">
-                    <view class="item-title">性别要求</view>
-                    <view class="flex-ct-wrap">
-                        <view class="item active">不限</view>
-                        <view class="item">男生可做</view>
-                        <view class="item">女生可做</view>
+                    <view class="type-box">
+                        <view class="item-title">性别要求</view>
+                        <view class="flex-ct-wrap">
+                            <view class="item active">不限</view>
+                            <view class="item">男生可做</view>
+                            <view class="item">女生可做</view>
+                        </view>
                     </view>
-                </view>
-                <view class="type-box">
-                    <view class="item-title">身份要求</view>
-                    <view class="flex-ct-wrap">
-                        <view class="item active">不限</view>
-                        <view class="item">学生可做</view>
-                        <view class="item">非学生可做</view>
+                    <view class="type-box">
+                        <view class="item-title">身份要求</view>
+                        <view class="flex-ct-wrap">
+                            <view class="item active">不限</view>
+                            <view class="item">学生可做</view>
+                            <view class="item">非学生可做</view>
+                        </view>
                     </view>
-                </view>
-                <view class="type-box">
-                    <view class="item-title">职务要求</view>
-                    <view class="flex-ct-wrap">
-                        <view class="item active">不限</view>
-                        <view class="item">兼职</view>
-                        <view class="item">全职</view>
+                    <view class="type-box">
+                        <view class="item-title">职务要求</view>
+                        <view class="flex-ct-wrap">
+                            <view class="item active">不限</view>
+                            <view class="item">兼职</view>
+                            <view class="item">全职</view>
+                        </view>
                     </view>
+                </scroll-view>
+                <view class="btns flex-ct-btw">
+                    <view class="btn1 flex-ct-ct">
+                        <image src=""></image>重置
+                    </view>
+                    <view class="btn2 flex-ct-ct">确定</view>
                 </view>
-            </scroll-view>
+            </view>
+            
+        
+            
         </view>
     </view>
 
@@ -206,8 +224,12 @@
 // 按需引入, 更小的应用体积
 import './index.scss' 
 import Taro from '@tarojs/taro'
+import { AtButton} from "taro-ui-vue";
+import "taro-ui-vue/dist/style/components/button.scss";
+
 export default {
     components: {
+        AtButton
   },
   data () {
     return {

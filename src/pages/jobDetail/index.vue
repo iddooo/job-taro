@@ -46,7 +46,7 @@
         <view class="font-sub mb46">2、对学生进行课后辅导</view>
         <view class="font-sub">任职要求：</view>
         <view class="font-sub">1、大学本科学历</view>
-        <view class="font-sub">2、对书法有了解或者热爱书法</view>
+        <view class="font-sub mb46">2、对书法有了解或者热爱书法</view>
     </view>
 
     <view class="font-h2">发布企业</view>
@@ -65,6 +65,75 @@
                 longitude="113.324520"
                 latitude="23.099994"
                 scale="14"/>
+        </view>
+    </view>
+
+    <view class="font-h2 mb24 active">相似职位推荐</view>
+    
+    <!-- JobCard -->
+    <view class="job-card" @tap="goJobDetail">
+        <view class="flex-ct-btw">
+            <view class="title">招运营专员</view>
+            <view class="flex-btm red">
+                <view class="price">30元</view>
+                <view class="unit">/小时</view>
+            </view>
+        </view>
+        <view class="tags flex-ct">
+            <view class="tag-item">日结</view>
+            <view class="tag-item">时薪 </view>
+            <view class="tag-item">女生</view>
+        </view>
+        <view class="distance flex-ct">
+            <image class="d-icon" src=""></image>
+            <view class="outer">3.11km</view>&nbsp;|&nbsp;
+            <view>海淀区</view>
+        </view>
+        <view class="company flex-ct-btw">
+            <view class="flex-ct">
+                <image class="c-icon" src=""></image>
+                <view>北京有限公司</view>
+            </view>
+            <view class="r-btn">投递简历</view>
+        </view>
+
+    </view>
+
+    <view class="job-card">
+        <view class="flex-ct-btw">
+            <view class="title">兼职书法老师</view>
+            <view class="flex-btm red">
+                <view class="price">30元</view>
+                <view class="unit">/小时</view>
+            </view>
+        </view>
+        <view class="tags flex-ct">
+            <view class="tag-item">北京·四惠</view>
+            <view class="tag-item">时薪 </view>
+            <view class="tag-item">经验不限</view>
+        </view>
+        <view class="distance flex-ct">
+            <image class="d-icon" src=""></image>
+            <view class="outer">3.11km</view>&nbsp;|&nbsp;
+            <view>海淀区</view>
+        </view>
+        <view class="company flex-ct-btw">
+            <view class="flex-ct">
+                <image class="c-icon" src=""></image>
+                <view>教育有限公司  B轮  150-500人</view>
+            </view>
+            <view class="r-btn">投递简历</view>
+        </view>
+
+    </view>
+
+    <view class="btns flex-ct-btw">
+        <view class="btn1">
+            <image src=""></image>
+            <view>在线沟通</view>
+        </view>
+        <view class="btn2 flex-ct-ct">
+            投递简历
         </view>
     </view>
 
