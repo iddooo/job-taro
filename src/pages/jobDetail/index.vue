@@ -135,8 +135,26 @@
             <image src=""></image>
             <view>在线沟通</view>
         </view>
-        <view class="btn2 flex-ct-ct">
+        <view class="btn2 flex-ct-ct"  @tap="isShowResume = true">
             投递简历
+        </view>
+    </view>
+
+    <view v-show="isShowResume">
+        <view class="model"></view>
+        <view class="dailog">
+            <view class="dailog-title">筛选</view>
+            <view class="cancel" @tap="isShowFilters = false">取消</view>
+            <view class="d-content">
+                <view class="r-item">
+                    <view class="name">2021教育老师-李雷-3年简历</view>
+                    <view class="des flex-ct">23KB  2021.03.05  14.36完成<view class="state">在线简历</view></view>
+                </view>
+                <view class="r-item">
+                    <view class="name">2021教育老师-李雷-3年简历</view>
+                    <view class="des flex-ct">23KB  2021.03.05  14.36完成</view>
+                </view>
+            </view>
         </view>
     </view>
 
@@ -150,20 +168,23 @@ import Taro from '@tarojs/taro'
 definePageConfig({
   navigationBarTitleText: "岗位详情"
 });
+import './index.scss' 
 
 export default {
   components: {
   },
   data() {
     return {
-        goCompany(){
+        isShowResume:false,
+        
+    };
+  },
+  methods: {
+      goCompany(){
             Taro.navigateTo({
             url: '/pages/company/index'
         })
         }
-    };
-  },
-  methods: {
   }
 };
 </script>

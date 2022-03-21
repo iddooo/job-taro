@@ -5,7 +5,8 @@ export default {
     'pages/message/index',
     'pages/mine/index',
     'pages/jobDetail/index',
-    'pages/company/index'
+    'pages/company/index',
+    'pages/notice/index'
   ],
   window: {
     backgroundTextStyle: 'light',

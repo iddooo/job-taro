@@ -1,38 +1,77 @@
 <template>
-  <view class="index">
-    消息
+<view class="index">
+    <view class="notice flex-ct-ct" @tap="goNotice">
+      <image class="notice-icon" src=""></image>
+      <view class="n-txt">系统通知</view>
+      <image class="arrow-icon" src=""></image>
+    </view>
+
+    <view class="msg-list">
+        <view class="msg-box">
+            <view class="avater">
+                <image class="notice-icon" src=""></image>
+                <view class="badge flex-ct-ct">1</view>
+            </view>
+            <view class="des">
+                <view class="flex-ct-btw">
+                    <view class="flex-ct mb12">
+                        <view class="font1">李先生</view>
+                        <view class="font2">教育学院</view>
+                    </view>
+                    <view class="font3">10:25</view>
+                </view>
+                <view class="font4">兼职书法老师</view>
+                <view class="font5">加我电话详细聊18844567899</view>
+            </view>
+        </view>
+        <view class="msg-box">
+            <view class="avater">
+                <image class="notice-icon" src=""></image>
+                <view class="badge flex-ct-ct">1</view>
+            </view>
+            <view class="des">
+                <view class="flex-ct-btw">
+                    <view class="flex-ct mb12">
+                        <view class="font1">李先生</view>
+                        <view class="font2">教育学院</view>
+                    </view>
+                    <view class="font3">10:25</view>
+                </view>
+                <view class="font4">兼职书法老师</view>
+                <view class="font5">加我电话详细聊18844567899</view>
+            </view>
+        </view>
+
+        <!-- <view class="no-msg flex-ct-ct">
+            <image src=""></image>
+            <view>没有更多消息</view>
+        </view> -->
+    </view>
   </view>
+  
 </template>
 
 <script>
 // 按需引入, 更小的应用体积
-import { AtButton, AtToast, AtNoticebar } from 'taro-ui-vue'
-import "taro-ui-vue/dist/style/components/button.scss"
-import "taro-ui-vue/dist/style/components/toast.scss"
-import "taro-ui-vue/dist/style/components/noticebar.scss"
-import './index.scss' 
+import Taro from '@tarojs/taro'
+
+import "./index.scss";
 definePageConfig({
-  navigationBarTitleText: '消息'
-})
+  navigationBarTitleText: "消息"
+});
 export default {
-    components: {
-    AtButton,
-    AtToast,
-    AtNoticebar
+  components: {
   },
-  data () {
+  data() {
     return {
-      msg: 'Hello world!',
-      show: false
-    }
+    };
   },
   methods: {
-    handleClick () {
-      this.show = true
-    },
-    handleClose () {
-      this.show = false
+    goNotice(){
+        Taro.navigateTo({
+            url: '/pages/notice/index'
+        })
     }
-  },
-    }
+  }
+};
 </script>
