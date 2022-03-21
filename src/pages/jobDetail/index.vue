@@ -143,8 +143,8 @@
     <view v-show="isShowResume">
         <view class="model"></view>
         <view class="dailog">
-            <view class="dailog-title">筛选</view>
-            <view class="cancel" @tap="isShowFilters = false">取消</view>
+            <view class="dailog-title">选择发送简历</view>
+            <view class="cancel" @tap="isShowResume = false">取消</view>
             <view class="d-content">
                 <view class="r-item">
                     <view class="name">2021教育老师-李雷-3年简历</view>

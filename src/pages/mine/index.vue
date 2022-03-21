@@ -6,7 +6,7 @@
                 <image src=""></image>
             </view>
             <view class="user-name">登录开启赚钱旅程</view>
-            <view class="sign">
+            <view class="sign" @tap="goSign">
                 <image src=""></image>
             </view>
         </view>
@@ -116,6 +116,8 @@
 // 按需引入, 更小的应用体积
 import { AtButton } from 'taro-ui-vue'
 import "taro-ui-vue/dist/style/components/button.scss"
+import Taro from '@tarojs/taro'
+
 import './index.scss' 
 
 definePageConfig({
@@ -131,6 +133,11 @@ export default {
     }
   },
   methods: {
+      goSign(){
+          Taro.navigateTo({
+            url: '/pages/sign/index'
+        })
+      }
   },
     }
 </script>

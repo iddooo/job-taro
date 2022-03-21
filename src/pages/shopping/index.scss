@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .shopping {
   width: 750px;
   min-height: 100vh;
@@ -237,4 +239,11 @@
       }
     }
   }
+}
+
+
+
+.index {
+  background: #f5f6fa;
+  padding: 24px;
 }

@@ -41,10 +41,14 @@
                 <view class="font5">加我电话详细聊18844567899</view>
             </view>
         </view>
+        
+        <view class="tips flex-ct-ct">
+            <view>没有更多沟通商家了</view>
+        </view>
 
         <!-- <view class="no-msg flex-ct-ct">
             <image src=""></image>
-            <view>没有更多消息</view>
+            <view class="tips">没有更多消息</view>
         </view> -->
     </view>
   </view>
