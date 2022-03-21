@@ -102,7 +102,7 @@ export default {
   methods: {
     goAlipayAccount(){
         Taro.navigateTo({
-            url: '/pages/alipayAccount/index'
+            url: '/mine/alipayAccount/index'
         })
     }
   },

@@ -50,7 +50,7 @@ export default {
   methods: {
     goAlipay(){
         Taro.navigateTo({
-            url: '/pages/alipay/index'
+            url: '/mine/alipayAccount/index'
         })
     }
   },

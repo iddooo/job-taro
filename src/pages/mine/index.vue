@@ -135,17 +135,17 @@ export default {
   methods: {
       goSign(){
           Taro.navigateTo({
-            url: '/pages/sign/index'
+            url: '/mine/sign/index'
         })
       },
       goAccount(){
           Taro.navigateTo({
-            url: '/pages/account/index'
+            url: '/mine/alipayAccount/index'
         })
       },
       goMyApply(){
           Taro.navigateTo({
-            url: '/pages/myApply/index'
+            url: '/mine/myApply/index'
         })
       }
   },

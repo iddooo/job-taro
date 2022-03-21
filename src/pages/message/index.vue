@@ -73,7 +73,7 @@ export default {
   methods: {
     goNotice(){
         Taro.navigateTo({
-            url: '/pages/notice/index'
+            url: "message/notice/index"
         })
     }
   }

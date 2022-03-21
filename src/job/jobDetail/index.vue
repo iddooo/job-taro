@@ -182,7 +182,7 @@ export default {
   methods: {
       goCompany(){
             Taro.navigateTo({
-            url: '/pages/company/index'
+            url: '/job/company/index'
         })
         }
   }
