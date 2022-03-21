@@ -1,0 +1,158 @@
+@import "../../app.scss";
+
+.index {
+  background: #f5f6fa;
+  padding: 24px;
+}
+.font-h1 {
+  font-size: 43px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #000000;
+  line-height: 61px;
+}
+.font-h2 {
+  font-size: 36px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #000000;
+  line-height: 50px;
+}
+.font-title {
+  font-size: 28px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #111e38;
+  line-height: 40px;
+}
+.font-grey {
+  font-size: 24px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #808999;
+  line-height: 33px;
+}
+.font-sub {
+  font-size: 28px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #16233c;
+  line-height: 46px;
+}
+.font-com {
+  font-size: 32px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #101d37;
+  line-height: 45px;
+}
+.font24 {
+  font-size: 24px;
+}
+
+.pl32 {
+  padding-left: 32px;
+}
+
+.mb46 {
+  margin-bottom: 46px;
+}
+
+.money {
+  font-size: 36px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #fa5555;
+  line-height: 50px;
+  margin-top: 8px;
+}
+
+.tags {
+  margin-top: 21px;
+  .tag-item {
+    padding: 4px 16px;
+    font-size: 20px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #a4a9b4;
+    line-height: 28px;
+    background-color: #fff;
+    margin-right: 16px;
+  }
+}
+
+.right-arrow {
+  width: 10px;
+  height: 18px;
+  position: absolute;
+  background-color: #eee;
+}
+
+.baoz {
+  width: 701px;
+  height: 63px;
+  background: #ffffff;
+  border-radius: 12px;
+  margin: 24px auto;
+  position: relative;
+  .shield {
+    width: 30px;
+    height: 30px;
+    margin-left: 24px;
+    margin-right: 14px;
+    background-color: #eee;
+  }
+  .green {
+    color: #00cc88;
+    margin-right: 14px;
+  }
+  .right-arrow {
+    right: 27px;
+    top: 22px;
+  }
+}
+
+.content {
+  padding-top: 32px;
+  padding-right: 32px;
+  padding-left: 32px;
+  margin: 24px 0;
+  background: #ffffff;
+  border-radius: 22px;
+}
+
+.line {
+  position: relative;
+  padding-bottom: 32px;
+  padding-left: 38px;
+  .icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -5px;
+    top: 5px;
+    background-color: #eee;
+  }
+}
+
+.company {
+  position: relative;
+  .com-icon {
+    width: 84px;
+    height: 84px;
+    background: #00cc88;
+    margin-right: 30px;
+    float: left;
+    border-radius: 50%;
+  }
+  .right-arrow {
+    top: 14px;
+    right: 0;
+  }
+}
+
+.map-ctr{
+    margin-top: 25px;
+    width: 636px;
+    height: 406px;
+}

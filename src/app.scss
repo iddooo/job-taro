@@ -1,0 +1,96 @@
+// 文字颜色 #111E38
+/* 标题 #101D37 */
+/* 突出 #111E38 */
+/* 次要 #A4A9B4 */
+/* 主色 #1F2B44 */
+$mainColor: #1f2b44;
+$titleColor: #101d37;
+$subColor: #a4a9b4;
+$outColor: #111e38;
+
+/* 宽高 */
+@mixin wh($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin flex($justify: center, $align: center) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* 多行省略 */
+@mixin elips($n: 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @if $n == 1 {
+  	white-space: nowrap;
+  }
+  display: -webkit-box;
+  -webkit-line-clamp: $n;
+  -webkit-box-orient: vertical;
+}
+.model{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+@mixin triangle($width, $height, $color, $direction) {
+  $width: $width/2;
+  $color-border-style: $height solid $color;
+  $transparent-border-style: $width solid transparent;
+  height: 0;
+  width: 0;
+
+  @if $direction==up {
+    border-bottom: $color-border-style;
+    border-left: $transparent-border-style;
+    border-right: $transparent-border-style;
+  } @else if $direction==right {
+    border-left: $color-border-style;
+    border-top: $transparent-border-style;
+    border-bottom: $transparent-border-style;
+  } @else if $direction==down {
+    border-top: $color-border-style;
+    border-left: $transparent-border-style;
+    border-right: $transparent-border-style;
+  } @else if $direction==left {
+    border-right: $color-border-style;
+    border-top: $transparent-border-style;
+    border-bottom: $transparent-border-style;
+  }
+}
+.flex-ct-btw {
+  @include flex(space-between);
+}
+.flex-ct-end {
+  @include flex(flex-end);
+}
+
+.flex-ct-ard {
+  @include flex(space-around);
+}
+.flex-ct-ct {
+  @include flex();
+}
+.flex-ct{
+  @include flex(flex-start);
+}
+.flex-btm {
+	display: flex;
+	align-items: baseline;
+}
+.flex-ct-wrap{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
