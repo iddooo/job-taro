@@ -9,7 +9,8 @@ export default {
     'pages/notice/index',
     'pages/sign/index',
     'pages/account/index',
-    'pages/alipayAccount/index'
+    'pages/alipayAccount/index',
+    'pages/myApply/index'
   ],
   window: {
     backgroundTextStyle: 'light',

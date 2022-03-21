@@ -43,7 +43,7 @@
         <view class="percent flex-ct">完善度 <view class="green">72%</view>,完善简历可提高录取率~</view>
     </view>
 
-    <view class="my-apply flex-ct">
+    <view class="my-apply flex-ct"  @tap="goMyApply">
         <view class="apply-status">
             <view class="count">0</view>
             <view class="status">全部</view>
@@ -141,6 +141,11 @@ export default {
       goAccount(){
           Taro.navigateTo({
             url: '/pages/account/index'
+        })
+      },
+      goMyApply(){
+          Taro.navigateTo({
+            url: '/pages/myApply/index'
         })
       }
   },
