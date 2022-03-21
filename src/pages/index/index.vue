@@ -140,7 +140,7 @@
                     <view class="item">超市零售</view>
                 </scroll-view>
                 <scroll-view :scroll-y="true" class="right-box" @tap="handleClick">
-                    <view class="item">全部</view>
+                    <view class="item active">全部</view>
                     <view class="item">分拣员</view>
                     <view class="item">分拣员</view>
                     <view class="item">分拣员</view>

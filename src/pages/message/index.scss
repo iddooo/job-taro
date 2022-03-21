@@ -1,7 +1,11 @@
+.index {
+  min-height: 100vh;
+  background: #fff;
+}
 .notice {
   width: 750px;
   height: 128px;
-  background: #ffffff;
+  border-bottom: 16px solid #f5f6fa;
   .notice-icon {
     width: 100px;
     height: 100px;
@@ -25,15 +29,16 @@
   }
 }
 .msg-list {
-  background: #ffffff;
-  .no-msg {
-    width: 100%;
-    min-height: 964rpx;
+  .tips {
     font-size: 28px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     color: #9c9c9c;
     line-height: 40px;
+  }
+  .no-msg {
+    width: 100%;
+    min-height: 964rpx;
     image {
       width: 465px;
       height: 465px;
@@ -53,23 +58,23 @@
       margin-right: 32px;
       border-radius: 50%;
       position: relative;
-      .badge{   
+      .badge {
         position: absolute;
         right: 0;
         top: 0;
         width: 30px;
         height: 30px;
-        background: #FA5859;
+        background: #fa5859;
         border-radius: 50%;
         font-size: 20px;
         font-family: PingFangSC-Regular, PingFang SC;
         font-weight: 400;
-        color: #FFFFFF;
+        color: #ffffff;
         line-height: 28px;
       }
     }
-    .des{
-        flex:1;
+    .des {
+      flex: 1;
     }
     .mb12 {
       margin-bottom: 12px;

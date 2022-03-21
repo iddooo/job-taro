@@ -300,6 +300,9 @@
                 font-weight: 400;
                 color: #808999;
                 line-height: 40px;
+                &.active{                 
+                    color: #00CC88;
+                }
             }
         }
     }
