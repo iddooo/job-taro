@@ -30,19 +30,19 @@ $outColor: #111e38;
   overflow: hidden;
   text-overflow: ellipsis;
   @if $n == 1 {
-  	white-space: nowrap;
+    white-space: nowrap;
   }
   display: -webkit-box;
   -webkit-line-clamp: $n;
   -webkit-box-orient: vertical;
 }
-.model{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
+.model {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
 }
 @mixin triangle($width, $height, $color, $direction) {
   $width: $width/2;
@@ -82,15 +82,34 @@ $outColor: #111e38;
 .flex-ct-ct {
   @include flex();
 }
-.flex-ct{
+.flex-ct {
   @include flex(flex-start);
 }
 .flex-btm {
-	display: flex;
-	align-items: baseline;
+  display: flex;
+  align-items: baseline;
 }
-.flex-ct-wrap{
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
+.flex-ct-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+button::after {
+  border: 0;
+}
+.button{
+    background: #00cc88;
+    border-radius: 41px;
+    margin: 32px auto;
+    font-size: 30px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #ffffff;
+    @include flex();
+    width: 100%;
+    height: 82px;
+}
+.button.disabled{
+    background: #E5E7EE;
+    color: #878D99;
 }

@@ -7,7 +7,9 @@ export default {
     'pages/jobDetail/index',
     'pages/company/index',
     'pages/notice/index',
-    'pages/sign/index'
+    'pages/sign/index',
+    'pages/account/index',
+    'pages/alipayAccount/index'
   ],
   window: {
     backgroundTextStyle: 'light',

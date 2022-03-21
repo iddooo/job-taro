@@ -11,7 +11,7 @@
             </view>
         </view>
         
-        <view class="count flex-ct-btw">
+        <view class="count flex-ct-btw" @tap="goAccount">
             <view class="c-item">
                 <view class="score">0.00 元</view>
                 <view class="name flex-ct">
@@ -23,7 +23,7 @@
             <view class="c-item">
                 <view class="score">0.00 元</view>
                 <view class="name flex-ct">
-                    <view>账户余额</view>
+                    <view>平台币提现</view>
                   <image class="arrow-icon" src=""></image>
                 </view>
             </view>
@@ -31,7 +31,7 @@
             <view class="c-item">
                 <view class="score">0.00 元</view>
                 <view class="name flex-ct">
-                    <view>账户余额</view>
+                    <view>立即兑换</view>
                   <image class="arrow-icon" src=""></image>
                 </view>
             </view>
@@ -136,6 +136,11 @@ export default {
       goSign(){
           Taro.navigateTo({
             url: '/pages/sign/index'
+        })
+      },
+      goAccount(){
+          Taro.navigateTo({
+            url: '/pages/account/index'
         })
       }
   },
