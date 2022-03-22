@@ -25,6 +25,7 @@ export default {
         "sign/index",
         "alipayAccount/index",
         "myApply/index",
+        "collections/index",
       ],
     },
     {

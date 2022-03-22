@@ -6,6 +6,11 @@
       <button class="button btn">微信提现</button>
       <view class="other-way" @tap="goAlipayAccount">其他方式提现</view>
     </view>
+
+    <view class="detail">
+        全部工资明细
+        <image class="arrow-icon" src=""></image>
+    </view>
   </view>
 </template>
 

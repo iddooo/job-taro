@@ -63,7 +63,7 @@
     </view>
 
     <view class="menu">
-        <view class="menu-item flex-ct-btw">
+        <view class="menu-item flex-ct-btw" @tap="goCollections">
             <view class="flex-ct">
                 <view class="menu-icon">
                     <image src=""></image>
@@ -141,12 +141,17 @@ export default {
       },
       goAccount(){
         Taro.navigateTo({
-            url: '/mine/alipayAccount/index'
+            url: '/mine/account/index'
         })
       },
       goMyApply(){
         Taro.navigateTo({
             url: '/mine/myApply/index'
+        })
+      },
+      goCollections(){
+          Taro.navigateTo({
+            url: '/mine/collections/index'
         })
       }
   },
