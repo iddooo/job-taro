@@ -24,14 +24,12 @@
       <view class="tab-common">服饰鞋包</view>
       <view class="tab-common">美妆个护</view>
     </view>
-    <view class="filter">
-      <picker class="picker" mode="selector" :range="selector" @change="change">默认排序</picker>
-      <picker class="picker" mode="selector" :range="selector" @change="change">积分</picker>
-      <picker class="picker" mode="selector" :range="selector" @change="change">现金</picker>
-      <view class="radio">
-        <view class="radio-box"></view>仅看积分兑换
-      </view>
-    </view>
+    <filterpicker
+      :selectorList="selectorList"
+      :selectorData="selectorData"
+      @change="change"
+      @changeRadio="changeRadio"
+    />
     <view class="content">
       <view class="content-left">
         <view class="content-item" @tap="navigateTo('goodsdetail/index')">
@@ -129,6 +127,7 @@
 // import { Picker } from '@tarojs/components'
 import { AtRadio } from 'taro-ui-vue'
 import Taro from '@tarojs/taro'
+import filterpicker from '../../components/filterpicker'
 import './index.scss'
 definePageConfig({
   navigationBarTitleText: '牛犊梦商城',
@@ -141,34 +140,31 @@ Taro.setBackgroundColor({
 
 export default {
   components: {
-    AtRadio
+    AtRadio,
+    filterpicker
   },
   data() {
     return {
       selector: ['美国', '中国', '巴西', '日本'],
-      selectorChecked: '美国',
-      checkboxOption: [
-        {
-          value: 'list1',
-          label: 'iPhone X'
-        }
-      ],
-      checkedList: [],
-      value: ''
+      selectorData: {
+        sort: '0',
+        score: '1',
+        cash: '3'
+      },
+      onlyTask: false,
+      selectorList: [
+        { selector: ['默认排序', '按销量', '按时间'], key: 'sort' },
+        { selector: ['积分', '>100', '>500'], key: 'score' },
+        { selector: ['现金', '0-100', '>500'], key: 'cash' }
+      ]
     }
   },
   methods: {
-    handleClick() {
-      this.show = true
+    change({ key, value }) {
+      this.selectorData[key] = value
     },
-    handleClose() {
-      this.show = false
-    },
-    change(e) {
-      console.log(e)
-    },
-    handleChange(e) {
-      console.log(e)
+    changeRadio(flag) {
+      this.onlyTask = flag
     },
     navigateTo(url) {
       console.log(url)
