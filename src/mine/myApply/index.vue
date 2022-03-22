@@ -7,7 +7,7 @@
           <view class="tab-item">已完成</view>
       </view>
 
-          <!-- JobCard start-->
+    <!-- JobCard start-->
     <view class="job-box">
         <view class="job-card">
             <view class="flex-ct-btw">

@@ -1,0 +1,80 @@
+@import "../../app.scss";
+
+.index {
+  min-height: 100vh;
+  background: #fff;
+  padding: 24px;
+}
+.font-sub {
+  font-size: 32px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #101d37;
+  line-height: 45px;
+}
+.font-des {
+  font-size: 28px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #808999;
+  line-height: 40px;
+  margin-bottom: 16px;
+}
+.title {
+  font-size: 52px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #000000;
+  line-height: 73px;
+  margin-bottom: 24px;
+}
+.tips {
+  font-size: 24px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #00cc88;
+  line-height: 33px;
+}
+.type {
+  padding: 40px 0;
+  border-bottom: 1px solid #E8E9EB;
+}
+.type-item {
+  width: 298px;
+  height: 65px;
+  background: #00cc88;
+  border-radius: 33px;
+  border: 3px solid #00cc88;
+  @include flex();
+  overflow: hidden;
+  .type-item-content {
+    font-size: 28px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #00cc88;
+    background-color: #fff;
+    flex: 1;
+    height: 100%;
+    @include flex();
+    &.active {
+      background-color: #00cc88;
+      color: #fff;
+    }
+  }
+}
+.arrow-icon {
+  width: 9px;
+  height: 15px;
+  margin-right: 8px;
+  background-color: #EEE;
+}
+
+.skip{
+    position: absolute;
+    right: 32px;
+    top: 46px;
+}
+
+.btn{
+    margin-top: 224px;
+}

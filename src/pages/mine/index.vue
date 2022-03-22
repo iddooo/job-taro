@@ -5,7 +5,7 @@
             <view class="avater">
                 <image src=""></image>
             </view>
-            <view class="user-name">登录开启赚钱旅程</view>
+            <view class="user-name" @tap="goLogin">登录开启赚钱旅程</view>
             <view class="sign" @tap="goSign">
                 <image src=""></image>
             </view>
@@ -113,9 +113,6 @@
 </template>
 
 <script>
-// 按需引入, 更小的应用体积
-import { AtButton } from 'taro-ui-vue'
-import "taro-ui-vue/dist/style/components/button.scss"
 import Taro from '@tarojs/taro'
 
 import './index.scss' 
@@ -126,7 +123,6 @@ definePageConfig({
 
 export default {
     components: {
-    AtButton
   },
   data () {
     return {
@@ -134,17 +130,22 @@ export default {
   },
   methods: {
       goSign(){
-          Taro.navigateTo({
+        Taro.navigateTo({
             url: '/mine/sign/index'
         })
       },
+      goLogin(){
+        Taro.navigateTo({
+            url: '/login/signIn/index'
+        })
+      },
       goAccount(){
-          Taro.navigateTo({
+        Taro.navigateTo({
             url: '/mine/alipayAccount/index'
         })
       },
       goMyApply(){
-          Taro.navigateTo({
+        Taro.navigateTo({
             url: '/mine/myApply/index'
         })
       }

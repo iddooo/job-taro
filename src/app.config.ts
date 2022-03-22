@@ -7,6 +7,14 @@ export default {
   ],
   subPackages: [
     {
+        root: "login",
+        pages: [
+            "signIn/index", 
+            "prefer/index",
+            "profile/index",
+        ],
+    },
+    {
       root: "job",
       pages: ["jobDetail/index", "company/index"],
     },

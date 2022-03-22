@@ -243,7 +243,7 @@ export default {
     },
     goJobDetail(){
         Taro.navigateTo({
-            url: '/pages/jobDetail/index'
+            url: '/job/jobDetail/index'
         })
     }
   },

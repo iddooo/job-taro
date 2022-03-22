@@ -1,0 +1,127 @@
+@import "../../app.scss";
+
+.index {
+  min-height: 100vh;
+  background: #ffffff;
+}
+.tabs {
+  padding: 68px 44px 110px;
+  @extend .flex-btm;
+  .tab-item {
+    font-size: 30px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #414141;
+    line-height: 42px;
+    margin-right: 76px;
+    &.active {
+      font-size: 52px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #000000;
+      line-height: 73px;
+    }
+  }
+}
+.form {
+  padding: 0 44px;
+  .form-item {
+    height: 77px;
+    @include flex(flex-start);
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 24px;
+    &:last-of-type {
+      border-bottom: 0;
+    }
+    .form-label {
+      width: 114px;
+      font-size: 28px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #414141;
+      .form-label-icon {
+        margin-left: 9px;
+        width: 36px;
+        height: 42px;
+        background-color: #101e37;
+      }
+    }
+    .form-ipt {
+      flex: 1;
+      @include flex(flex-start);
+      input {
+        flex: 1;
+        font-size: 42px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: #111e38;
+      }
+      .tips {
+        font-size: 28px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        &.disabled {
+          color: #afb3bb;
+        }
+        &.green {
+          color: #00cc88;
+        }
+      }
+    }
+  }
+  .btn {
+    margin-top: 50px;
+    width: 100%;
+  }
+}
+.other {
+  margin-top: 263px;
+  text-align: center;
+  font-size: 24px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #afb3bb;
+  line-height: 33px;
+  .wechat-icon {
+    display: block;
+    width: 66px;
+    height: 66px;
+    margin: 22px auto 40px;
+    border-radius: 50%;
+    background-color: #00cc88;
+  }
+}
+.agreement {
+  @include flex();
+  font-size: 24px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #afb3bc;
+  line-height: 33px;
+  .circle {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 3px solid #13203a;
+    margin-right: 10px;
+    border-radius: 50%;
+    &.active {
+      background: #13203a;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 25%;
+        top: 25%;
+        width: 15px;
+        height: 9px;
+        border-left: 5px solid #6ac543;
+        border-bottom: 5px solid #6ac543;
+        transform: rotate(-50deg);
+      }
+    }
+  }
+  .underline {
+    text-decoration: underline;
+    color: #13203a;
+  }
+}
