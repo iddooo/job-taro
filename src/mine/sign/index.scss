@@ -35,6 +35,9 @@
   color: #a4a9b4;
   line-height: 92px;
   margin-top: 10px;
+  &.red{
+    color: #FF7744;
+  }
 }
 .card-pd1 {
   padding-top: 35px;
@@ -78,13 +81,5 @@
 
 .btn {
   width: 702px;
-  height: 82px;
-  background: #00cc88;
-  border-radius: 41px;
   margin: 64px auto;
-  font-size: 30px;
-  font-family: PingFangSC-Regular, PingFang SC;
-  font-weight: 400;
-  color: #ffffff;
-  line-height: 42px;
 }
