@@ -74,39 +74,49 @@
           </view>
       </view>
 
-        <view class="btns">
+        <!--  报名 -->
+        <!-- <view class="btns">
             <view class="btn-column">
-                <image src="https://img.langcms.com/index/"></image>
+                <image src="https://img.langcms.com/index/qxbm@2x.png"></image>
                 <view>取消报名</view>
             </view>
-            <button class="button-primary w455">
+            <button class="button-primary w455" @tap="isShowResume=true">
                 投递简历
             </button>
-        </view>
+        </view> -->
 
+
+        <!-- 录取/反馈 -->
         <!-- <view class="btns">
-            <view class="button-grey w298">
-                <image src="https://img.langcms.com/index/"></image>
+            <view class="button-grey w298" @tap="goFeedback">
+                <image src="https://img.langcms.com/index/rwfk@2x.png"></image>
                 <view>任务反馈</view>
             </view>
-            <view class="button-primary w380" >
-                联系商家
-            </view>
-        </view>
-
-        <view class="btns">
-            <view class="button-grey w189">
-                <image src="https://img.langcms.com/index/cmt@2x.png"></image>
-                <view>评价</view>
-            </view>
-            <view class="button-grey w189">
-                <image src="https://img.langcms.com/index/feed@2x.png"></image>
-                <view>申诉</view>
-            </view>
-            <view class="button-primary plain w280">
+            <view class="button-primary w380" @tap="isShowContact=true">
                 联系商家
             </view>
         </view> -->
+
+        <!-- 发薪 -->
+        <view class="btns">
+            <view class="button-grey w189" @tap="goCommnet">
+                <image src="https://img.langcms.com/index/cmt@2x.png"></image>
+                <view>评价</view>
+            </view>
+            <view class="button-grey w189" @tap="goComplaint">
+                <image src="https://img.langcms.com/index/feed@2x.png"></image>
+                <view>申诉</view>
+            </view>
+            <view class="button-primary plain w280" @tap="isShowContact=true">
+                联系商家
+            </view>
+        </view> 
+
+        <!-- 选择简历 -->
+        <Resumes :show="isShowResume"></Resumes>
+
+        <!-- 联系商家 -->
+        <Contacts :show="isShowContact"></Contacts>
 
   </view>
 </template>
@@ -114,18 +124,41 @@
 <script>
 // 按需引入, 更小的应用体积
 import './index.scss' 
+import Resumes from '../../components/Resumes/index'
+import Contacts from '../../components/Contacts/index'
+import Taro from '@tarojs/taro'
+
 definePageConfig({
   navigationBarTitleText: '报名详情'
 })
 
 export default {
     components: {
-  },
-  data () {
-    return {
-    }
-  },
-  methods: {
-  },
+      Resumes,
+      Contacts
+    },
+    data () {
+        return {
+            isShowResume:false,
+            isShowContact:false
+        }
+    },
+    methods: {
+        goFeedback(){
+            Taro.navigateTo({
+                url: '/feedback/feedback/index'
+            })
+        },
+        goCommnet(){
+            Taro.navigateTo({
+                url: '/feedback/comment/index'
+            })
+        },
+        goComplaint(){
+            Taro.navigateTo({
+                url: '/feedback/complaint/index'
+            })
+        }
+    },
 }
 </script>

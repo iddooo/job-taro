@@ -36,6 +36,14 @@ export default {
       root: "message",
       pages: ["notice/index"],
     },
+    {
+        root: "feedback",
+        pages: [
+            "feedback/index",
+            "complaint/index",
+            "comment/index"
+        ],
+    },
     // {
     //   root: "shop",
     //   pages: ["shopping/index"],
