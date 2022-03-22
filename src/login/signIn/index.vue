@@ -59,7 +59,7 @@ export default {
   methods:{
       goPrefer(){
         Taro.navigateTo({
-                url:'/login/prefer/index'
+            url:'/login/prefer/index'
         })
       }
   }

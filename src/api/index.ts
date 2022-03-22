@@ -36,7 +36,7 @@ export function post({
           if (res.data.code === 0) {
             reslove(res.data);
           } else {
-            reject(res);
+            reject(res.data);
           }
         } else {
           reject(res);

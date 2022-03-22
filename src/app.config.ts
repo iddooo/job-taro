@@ -7,20 +7,12 @@ export default {
   ],
   subPackages: [
     {
-        root: "login",
-        pages: [
-            "signIn/index", 
-            "prefer/index",
-            "profile/index",
-        ],
+      root: "login",
+      pages: ["signIn/index", "prefer/index", "profile/index"],
     },
     {
       root: "job",
-      pages: [
-          "jobDetail/index", 
-          "company/index",
-          'jobProgress/index'
-        ],
+      pages: ["jobDetail/index", "company/index", "jobProgress/index"],
     },
     {
       root: "mine",
@@ -37,17 +29,20 @@ export default {
       pages: ["notice/index"],
     },
     {
-        root: "feedback",
-        pages: [
-            "feedback/index",
-            "complaint/index",
-            "comment/index"
-        ],
+      root: "feedback",
+      pages: ["feedback/index", "complaint/index", "comment/index"],
     },
-    // {
-    //   root: "shop",
-    //   pages: ["shopping/index"],
-    // },
+    {
+      root: "shop",
+      pages: [
+        "goodsdetail/index",
+        "illustrate/index",
+        "mycent/index",
+        "myextension/index",
+        "myorder/index",
+        "myscore/index",
+      ],
+    },
   ],
   window: {
     backgroundTextStyle: "light",
