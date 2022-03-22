@@ -16,7 +16,11 @@ export default {
     },
     {
       root: "job",
-      pages: ["jobDetail/index", "company/index"],
+      pages: [
+          "jobDetail/index", 
+          "company/index",
+          'jobProgress/index'
+        ],
     },
     {
       root: "mine",

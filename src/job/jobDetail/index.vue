@@ -73,6 +73,7 @@
         
         <!-- JobCard start-->
         <JobCard></JobCard>
+        <JobCard></JobCard>
         <!-- JobCard end-->
 
 

@@ -9,7 +9,7 @@
 
     <!-- JobCard start-->
     <view class="job-box">
-        <view class="job-card">
+        <view class="job-card" @tap="goJobProgress">
             <view class="flex-ct-btw">
                 <view class="flex-ct title">
                     <view class="status">待录取</view>
@@ -104,7 +104,12 @@ export default {
         Taro.navigateTo({
             url: '/mine/alipayAccount/index'
         })
-    }
+    },
+    goJobProgress(){
+        Taro.navigateTo({
+            url: '/job/jobProgress/index'
+        })
+      },
   },
     }
 </script>
