@@ -1,15 +1,15 @@
 <template>
 <view class="index">
     <view class="notice flex-ct-ct" @tap="goNotice">
-      <image class="notice-icon" src=""></image>
+      <image class="notice-icon" src="https://img.langcms.com/message/xttz@1x.png"></image>
       <view class="n-txt">系统通知</view>
-      <image class="arrow-icon" src=""></image>
+      <image class="arrow-icon" src="https://img.langcms.com/message/message/arrow.png"></image>
     </view>
 
     <view class="msg-list">
         <view class="msg-box">
             <view class="avater">
-                <image class="notice-icon" src=""></image>
+                <image class="notice-icon" src="https://img.langcms.com/message/"></image>
                 <view class="badge flex-ct-ct">1</view>
             </view>
             <view class="des">
@@ -26,7 +26,7 @@
         </view>
         <view class="msg-box">
             <view class="avater">
-                <image class="notice-icon" src=""></image>
+                <image class="notice-icon" src="https://img.langcms.com/message/"></image>
                 <view class="badge flex-ct-ct">1</view>
             </view>
             <view class="des">
@@ -47,7 +47,7 @@
         </view>
 
         <!-- <view class="no-msg flex-ct-ct">
-            <image src=""></image>
+            <image src="https://img.langcms.com/message/Empty Inbox _Two Color@1x.png"></image>
             <view class="tips">没有更多消息</view>
         </view> -->
     </view>

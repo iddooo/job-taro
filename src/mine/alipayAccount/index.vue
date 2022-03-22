@@ -11,7 +11,8 @@
               <view class="form-label">真实姓名</view>
               <view class="form-ipt flex-ct">
                   <input type="text">
-                  <image class="tips" src="" @tap="isShowTips=true"></image>
+                  <view class="question" @tap="isShowTips=true">?</view>
+                  <!-- <image class="tips" src="https://img.langcms.com/index/" @tap="isShowTips=true"></image> -->
               </view>
           </view>
 

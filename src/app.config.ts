@@ -55,8 +55,8 @@ export default {
     list: [
       {
         pagePath: "pages/index/index",
-        iconPath: "images/tabbar/index.png",
-        selectedIconPath: "images/tabbar/index-s.png",
+        iconPath: "images/tabbar/home.png",
+        selectedIconPath: "images/tabbar/home-s.png",
         text: "首页",
       },
       {

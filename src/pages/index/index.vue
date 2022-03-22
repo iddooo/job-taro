@@ -3,14 +3,14 @@
       <!-- 导航栏 -->
       <view class="nav-box">
           <view class="loc-box">
-              <image class="loc-icon" src=""></image>
+              <image class="loc-icon" src="https://img.langcms.com/index/zb@1x.png"></image>
               <view>北京</view>
           </view>
           <view class="ipt-box">
-              <image class="search-icon" src=""></image>
+              <image class="search-icon" src="https://img.langcms.com/index/ss@1x.png"></image>
               <input class="ipt" type="text" placeholder="职务" />
           </view>
-          <image class="sign-box" src=""></image>
+          <image class="sign-box" src="https://img.langcms.com/index/sign@1x.png"></image>
       </view>
 
     <!-- 轮播图 -->
@@ -20,7 +20,7 @@
             :autoplay="true"
             >
             <swiper-item>
-                <image class="banner-img" src=""></image>
+                <image class="banner-img" src="https://img.langcms.com/index/banner.png"></image>
             </swiper-item>
         </swiper>
     </view>
@@ -30,7 +30,7 @@
         <view class="flex-ct">
             <view class="r-item active">
                 <view>推荐</view>
-                <image class="active-icon" src=""></image>
+                <image class="active-icon" src="https://img.langcms.com/index/xz@1x.png"></image>
             </view>
             <view class="r-item">
                 <view>在家做</view>
@@ -72,13 +72,13 @@
                 <view class="tag-item">女生</view>
             </view>
             <view class="distance flex-ct">
-                <image class="d-icon" src=""></image>
+                <image class="d-icon" src="https://img.langcms.com/index/dt@1x.png"></image>
                 <view class="outer">3.11km</view>&nbsp;|&nbsp;
                 <view>海淀区</view>
             </view>
             <view class="company flex-ct-btw">
                 <view class="flex-ct">
-                    <image class="c-icon" src=""></image>
+                    <image class="c-icon" src="https://img.langcms.com/index/dt@1x.png"></image>
                     <view>北京有限公司</view>
                 </view>
                 <view class="r-btn">投递简历</view>
@@ -100,13 +100,13 @@
                 <view class="tag-item">经验不限</view>
             </view>
             <view class="distance flex-ct">
-                <image class="d-icon" src=""></image>
+                <image class="d-icon" src="https://img.langcms.com/index/dt@1x.png"></image>
                 <view class="outer">3.11km</view>&nbsp;|&nbsp;
                 <view>海淀区</view>
             </view>
             <view class="company flex-ct-btw">
                 <view class="flex-ct">
-                    <image class="c-icon" src=""></image>
+                    <image class="c-icon" src="https://img.langcms.com/index/dt@1x.png"></image>
                     <view>教育有限公司  B轮  150-500人</view>
                 </view>
                 <view class="r-btn">投递简历</view>
@@ -206,7 +206,7 @@
                 </scroll-view>
                 <view class="btns flex-ct-btw">
                     <view class="btn1 flex-ct-ct">
-                        <image src=""></image>重置
+                        <image src="https://img.langcms.com/index/cz@1x.png"></image>重置
                     </view>
                     <view class="btn2 flex-ct-ct">确定</view>
                 </view>

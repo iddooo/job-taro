@@ -1,17 +1,17 @@
 <template>
     <view class="index">
         <view class="image">
-            <image src=""></image>
+            <image src="https://img.langcms.com/index/qyrz@1x.png"></image>
         </view>
 
         <view class="box-1">
             <view class="b1-head">教育有限公司</view>
                 <view class="box flex-ct">
-                    <image src=""></image>
+                    <image src="https://img.langcms.com/index/gsrz@1x.png"></image>
                     <view class="font1">公司认证</view>
                     <view class="font2">｜ B轮  150-500人</view>
                 </view>
-            <image class="qi" src=""></image>
+            <image class="qi" src="https://img.langcms.com/index/qy@1x.png"></image>
         </view>
 
         <view class="box-2">
@@ -45,7 +45,7 @@
                 
                 <view class="provide flex-ct-ct">
                         <view>以上信息由</view>
-                        <image src=""></image>
+                        <image src="https://img.langcms.com/index/tyc@2x.png"></image>
                         <view>提供</view>
                     </view>
 

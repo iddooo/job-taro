@@ -25,7 +25,7 @@
             </view>
             <view class="company flex-ct-btw">
                 <view class="flex-ct">
-                    <image class="c-icon" src=""></image>
+                    <image class="c-icon" src="https://img.langcms.com/index/"></image>
                     <view>北京有限公司</view>
                 </view>
                 <view class="r-btn">联系商家</view>
@@ -48,7 +48,7 @@
             </view>
             <view class="company flex-ct-btw">
                 <view class="flex-ct">
-                    <image class="c-icon" src=""></image>
+                    <image class="c-icon" src="https://img.langcms.com/index/"></image>
                     <view>北京有限公司</view>
                 </view>
                 <view class="r-btn">联系商家</view>
@@ -71,7 +71,7 @@
             </view>
             <view class="company flex-ct-btw">
                 <view class="flex-ct">
-                    <image class="c-icon" src=""></image>
+                    <image class="c-icon" src="https://img.langcms.com/index/"></image>
                     <view>北京有限公司</view>
                 </view>
                 <view class="r-btn">联系商家</view>

@@ -24,8 +24,26 @@
     .sign {
       width: 128px;
       height: 128px;
-      background: linear-gradient(180deg, #6f00eb 0%, #3c00d2 100%);
       border-radius: 24px;
+      position: relative;
+      .link {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 128px;
+        height: 48px;
+        background: linear-gradient(180deg, #6f00eb 0%, #3c00d2 100%);
+        border-radius: 24px;
+        font-size: 24px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #ffffff;
+        image {
+          width: 19px;
+          height: 22px;
+          margin-right: 5px;
+        }
+      }
     }
   }
   .count {
@@ -49,7 +67,7 @@
         .arrow-icon {
           width: 9px;
           height: 15px;
-          background-color: #eee;
+
           margin-left: 12px;
         }
       }
@@ -72,6 +90,19 @@
   image {
     width: 100%;
     height: 100%;
+  }
+  .resume-btn{
+    width: 132px;
+    height: 48px;
+    background: linear-gradient(180deg, #02E599 0%, #20E2A1 100%);
+    border-radius: 24px;
+    font-size: 20px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #102039;
+    position: absolute;
+    right: 32px;
+    top: 40px;
   }
   .percent {
     position: absolute;
@@ -136,7 +167,7 @@
     .menu-icon {
       width: 36px;
       height: 36px;
-      background-color: #eee;
+
       margin-right: 34px;
     }
     .menu-name {
@@ -158,6 +189,5 @@
   .menu-arrow {
     width: 15px;
     height: 25px;
-    background-color: #1d1d55;
   }
 }

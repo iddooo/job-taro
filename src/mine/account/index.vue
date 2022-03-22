@@ -9,7 +9,7 @@
 
     <view class="detail">
         全部工资明细
-        <image class="arrow-icon" src=""></image>
+        <image class="arrow-icon" src="https://img.langcms.com/message/message/arrow.png"></image>
     </view>
   </view>
 </template>
@@ -30,7 +30,7 @@ export default {
   methods: {
     goAlipayAccount() {
       Taro.navigateTo({
-        url: 'mine/alipayAccount/index'
+        url: '/mine/alipayAccount/index'
       })
     }
   }

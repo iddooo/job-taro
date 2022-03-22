@@ -19,7 +19,7 @@
                <picker mode="region" @change="change" :value="[]">
                   <view class="font-sub">北京（默认当前地区）</view>
                 </picker>
-              <image class="arrow-icon" src=""></image>
+              <image class="arrow-icon" src="https://img.langcms.com/message/message/arrow.png"></image>
           </view>
       </view>
 
@@ -29,7 +29,7 @@
               <picker mode="selector" :range="selector" @change="change">
                   <view class="font-sub">请选择</view>
                 </picker>
-              <image class="arrow-icon" src=""></image>
+              <image class="arrow-icon" src="https://img.langcms.com/message/message/arrow.png"></image>
           </view>
       </view>
 
@@ -39,7 +39,7 @@
               <picker mode="selector" :range="selector" @change="change">
                   <view class="font-sub">不限</view>
                 </picker>
-              <image class="arrow-icon" src=""></image>
+              <image class="arrow-icon" src="https://img.langcms.com/message/message/arrow.png"></image>
           </view>
       </view>
 

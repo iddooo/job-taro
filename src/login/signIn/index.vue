@@ -14,7 +14,7 @@
           </view>
           <view class="form-item">
               <view class="form-label">
-                  <image class="form-label-icon" src=""></image>
+                  <image class="form-label-icon" src="https://img.langcms.com/login/lock.png"></image>
               </view>
               <view class="form-ipt">
                   <input type="text">
@@ -30,7 +30,7 @@
 
       <view class="other">
           <view>其他登录方式</view>
-          <image class="wechat-icon" src=""></image>
+          <image class="wechat-icon" src="https://img.langcms.com/login/wechat.png"></image>
       </view>
 
       <view class="agreement">

@@ -9,30 +9,30 @@
         </view>
 
         <view class="baoz flex-ct">
-            <image class="shield" src=""></image>
+            <image class="shield" src="https://img.langcms.com/index/aq@1x.png"></image>
             <view class="font-grey green">安全保障</view>
             <view class="font-grey">放心投递 安全无忧</view>
-            <image class="right-arrow" src=""></image>
+            <image class="right-arrow" src="https://img.langcms.com/index/arrow.png"></image>
         </view>
 
         <view class="content">
             <view class="line">
-                <image class="icon" src=""></image>
+                <image class="icon" src="https://img.langcms.com/index/gzrq@2x.png"></image>
                 <view class="font-title">工作日期</view>
                 <view class="font-grey">工作日</view>
             </view>
             <view class="line">
-                <image class="icon" src=""></image>
+                <image class="icon" src="https://img.langcms.com/index/gzsd@2x.png"></image>
                 <view class="font-title">工作时段</view>
                 <view class="font-grey">08:30～18:00</view>
             </view>
             <view class="line">
-                <image class="icon" src=""></image>
+                <image class="icon" src="https://img.langcms.com/index/gzdz@2x.png"></image>
                 <view class="font-title">北京市朝阳区马连坡街道东适口街万达影视商产业园</view>
                 <view class="font-grey"></view>
             </view>
             <view class="line">
-                <image class="icon" src=""></image>
+                <image class="icon" src="https://img.langcms.com/index/gwyq@2x.png"></image>
                 <view class="font-title">岗位要求</view>
                 <view class="font-grey">书法等级证书｜限大专以上</view>
             </view>
@@ -54,10 +54,10 @@
 
         <view class="content">
             <view class="company" @tap="goCompany">
-                <image class="com-icon" src=""></image>
+                <image class="com-icon" src="https://img.langcms.com/index/qy@1x.png"></image>
                 <view class="font-com">教育机构</view>
                 <view class="font-sub font24">教育有限公司  B轮  150-500人</view>
-                <image class="right-arrow" src=""></image>
+                <image class="right-arrow" src="https://img.langcms.com/index/arrow.png"></image>
             </view>
             <view class="map-ctr">
                 <map
@@ -79,7 +79,7 @@
 
         <view class="btns flex-ct-btw">
             <view class="btn1">
-                <image src=""></image>
+                <image src="https://img.langcms.com/index/zxgt@1x.png"></image>
                 <view>在线沟通</view>
             </view>
             <view class="btn2 flex-ct-ct"  @tap="isShowResume = true">

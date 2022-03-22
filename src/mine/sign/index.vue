@@ -1,7 +1,7 @@
 <template>
   <view class="index">
       <view class="card card-pd1">
-          <image class="img" src=""></image>
+          <image class="img" src="https://img.langcms.com/index/"></image>
           <view class="font">您今日未签到</view>
           <view class="count">+10</view>
       </view>
@@ -12,7 +12,7 @@
                   <view class="font">+2
                     </view>
                     <view class="image">
-                        <image src=""></image>
+                        <image src="https://img.langcms.com/index/"></image>
                     </view>
               </view>
               <view class="font day">1天</view>
@@ -22,7 +22,7 @@
                   <view class="font">+2
                     </view>
                     <view class="image">
-                        <image src=""></image>
+                        <image src="https://img.langcms.com/index/"></image>
                     </view>
               </view>
               <view class="font day">2天</view>
@@ -32,7 +32,7 @@
                   <view class="font">+2
                     </view>
                     <view class="image">
-                        <image src=""></image>
+                        <image src="https://img.langcms.com/index/"></image>
                     </view>
               </view>
               <view class="font day">3天</view>
@@ -42,7 +42,7 @@
                   <view class="font">+2
                     </view>
                     <view class="image">
-                        <image src=""></image>
+                        <image src="https://img.langcms.com/index/"></image>
                     </view>
               </view>
               <view class="font day">4天</view>
@@ -52,7 +52,7 @@
                   <view class="font">+2
                     </view>
                     <view class="image">
-                        <image src=""></image>
+                        <image src="https://img.langcms.com/index/"></image>
                     </view>
               </view>
               <view class="font day">5天</view>
@@ -62,7 +62,7 @@
                   <view class="font">+2
                     </view>
                     <view class="image">
-                        <image src=""></image>
+                        <image src="https://img.langcms.com/index/"></image>
                     </view>
               </view>
               <view class="font day">6天</view>
@@ -72,7 +72,7 @@
                   <view class="font">+2
                     </view>
                     <view class="image">
-                        <image src=""></image>
+                        <image src="https://img.langcms.com/index/"></image>
                     </view>
               </view>
               <view class="font day">7天</view>

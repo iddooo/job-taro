@@ -2,7 +2,7 @@
   <view class="index">
       <view class="head">
           <view class="avater">
-              <image src=""></image>
+              <image src="https://img.langcms.com/index/"></image>
           </view>
           <view class="green">更换头像</view>
       </view>
@@ -25,7 +25,7 @@
                     <picker mode="selector" :range="selector" @change="change">
                         <view class="picker">性别</view>
                     </picker>
-                <image class="arrow-icon" src=""></image>
+                <image class="arrow-icon" src="https://img.langcms.com/message/message/arrow.png"></image>
               </view>
           </view>
           <view class="form-item">
@@ -34,7 +34,7 @@
                     <picker mode="date"  @change="change" value="1991-04-04">
                         <view class="picker">1991-04-04</view>
                     </picker>
-                <image class="arrow-icon" src=""></image>
+                <image class="arrow-icon" src="https://img.langcms.com/message/message/arrow.png"></image>
               </view>
           </view>
           <view class="form-item">
@@ -43,7 +43,7 @@
                     <picker mode="selector" :range="selector" @change="change">
                         <view class="picker">学生党/上班族/待就业</view>
                     </picker>
-                <image class="arrow-icon" src=""></image>
+                <image class="arrow-icon" src="https://img.langcms.com/message/message/arrow.png"></image>
               </view>
           </view>
           <view class="form-item">
