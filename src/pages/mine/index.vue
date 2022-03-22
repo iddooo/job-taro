@@ -12,8 +12,8 @@
             </view>
         </view>
         
-        <view class="count flex-ct-btw" @tap="goAccount">
-            <view class="c-item">
+        <view class="count flex-ct-btw">
+            <view class="c-item" @tap="goAccount">
                 <view class="score">0.00 元</view>
                 <view class="name flex-ct">
                     <view>账户余额</view>

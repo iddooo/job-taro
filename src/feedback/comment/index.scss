@@ -1,0 +1,29 @@
+@import "../../app.scss";
+
+@import '../feedback/index.scss';
+
+.stars {
+  padding-top: 47px;
+  @include flex();
+  .star-icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 46px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+.level {
+  margin-top: 24px;
+  font-size: 24px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #1f2b44;
+  line-height: 33px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+
+

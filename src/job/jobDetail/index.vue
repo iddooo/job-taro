@@ -57,7 +57,7 @@
                 <image class="com-icon" src="https://img.langcms.com/index/qy@1x.png"></image>
                 <view class="font-com">教育机构</view>
                 <view class="font-sub font24">教育有限公司  B轮  150-500人</view>
-                <image class="right-arrow" src="https://img.langcms.com/index/arrow.png"></image>
+                <image class="right-arrow" src="https://img.langcms.com/message/arrow.png"></image>
             </view>
             <view class="map-ctr">
                 <map
@@ -87,23 +87,8 @@
             </view>
         </view>
 
-        <view v-show="isShowResume">
-            <view class="model"></view>
-            <view class="dailog">
-                <view class="dailog-title">选择发送简历</view>
-                <view class="cancel" @tap="isShowResume = false">取消</view>
-                <view class="d-content">
-                    <view class="r-item">
-                        <view class="name">2021教育老师-李雷-3年简历</view>
-                        <view class="des flex-ct">23KB  2021.03.05  14.36完成<view class="state">在线简历</view></view>
-                    </view>
-                    <view class="r-item">
-                        <view class="name">2021教育老师-李雷-3年简历</view>
-                        <view class="des flex-ct">23KB  2021.03.05  14.36完成</view>
-                    </view>
-                </view>
-            </view>
-        </view>
+        <!-- 选择简历 -->
+        <Resumes :show="isShowResume"></Resumes>
 
     </view>
 </template>
@@ -112,6 +97,7 @@
 // 按需引入, 更小的应用体积
 import Taro from '@tarojs/taro'
 import JobCard from '../../components/JobCard/index'
+import Resumes from '../../components/Resumes/index'
 
 definePageConfig({
   navigationBarTitleText: "岗位详情"
@@ -120,7 +106,8 @@ import './index.scss'
 
 export default {
   components: {
-      JobCard
+      JobCard,
+      Resumes
   },
   data() {
     return {
@@ -129,11 +116,11 @@ export default {
     };
   },
   methods: {
-      goCompany(){
+        goCompany(){
             Taro.navigateTo({
-            url: '/job/company/index'
-        })
-    }
+                url: '/job/company/index'
+            })
+        },
   }
 };
 </script>
