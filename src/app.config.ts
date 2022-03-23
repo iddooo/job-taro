@@ -26,11 +26,17 @@ export default {
     },
     {
       root: "message",
-      pages: ["notice/index"],
+      pages: ["notice/index","noticeDetail/index"],
     },
     {
       root: "feedback",
-      pages: ["feedback/index", "complaint/index", "comment/index"],
+      pages: [
+          "feedback/index", 
+          "complaint/index", 
+          "comment/index",
+          "myFdbkList/index",
+          "commentResult/index"
+        ],
     },
     {
       root: "shop",
@@ -43,6 +49,17 @@ export default {
         "myscore/index",
       ],
     },
+    {
+        root: "resume",
+        pages: [
+          "userInfo/index",
+          "education/index",
+          "experience/index",
+          "description/index",
+          "resumeList/index",
+          "onlineResume/index",
+        ],
+      },
   ],
   window: {
     backgroundTextStyle: "light",

@@ -1,0 +1,26 @@
+@import "../userInfo/index.scss";
+.form-label {
+    width: 194px!important;
+}
+
+.save {
+  width: 698px;
+  margin: 36px auto;
+}
+
+.picker-range {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  .picker {
+    width: 220px;
+  }
+  .range {
+    width: 60px;
+    text-align: center;
+  }
+}
+
+.grey {
+  color: #c2c6d0;
+}

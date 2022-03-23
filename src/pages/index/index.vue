@@ -8,7 +8,7 @@
           </view>
           <view class="ipt-box">
               <image class="search-icon" src="https://img.langcms.com/index/ss@1x.png"></image>
-              <input class="ipt" type="text" placeholder="职务" />
+              <input class="ipt" type="text" placeholder-class="plchd" placeholder="职务" />
           </view>
           <image class="sign-box" src="https://img.langcms.com/index/sign@1x.png"></image>
       </view>

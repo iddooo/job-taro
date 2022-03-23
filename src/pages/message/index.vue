@@ -3,7 +3,7 @@
     <view class="notice flex-ct-ct" @tap="goNotice">
       <image class="notice-icon" src="https://img.langcms.com/message/xttz@1x.png"></image>
       <view class="n-txt">系统通知</view>
-      <image class="arrow-icon" src="https://img.langcms.com/message/message/arrow.png"></image>
+      <image class="arrow-icon" src="https://img.langcms.com/message/arrow.png"></image>
     </view>
 
     <view class="msg-list">

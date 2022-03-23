@@ -1,6 +1,90 @@
 @import "../../app.scss";
 
 .index {
-    background: #f5f6fa;
-    padding: 32px;
+  background: #FFF;
+  padding: 24px;
+}
+.content {
+  width: 702px;
+  height: 441px;
+  background: #f5f6fa;
+  border-radius: 26px;
+  padding: 24px;
+  box-sizing: border-box;
+  margin-bottom: 64px;
+  .text {
+    height: 230px;
+    font-size: 30px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #111e38;
+    line-height: 42px;
   }
+  .image {
+    @include flex(flex-start);
+    image {
+      width: 162px;
+      height: 162px;
+      background: #ffffff;
+      border-radius: 25px;
+      overflow: hidden;
+    }
+  }
+}
+
+.title {
+  font-size: 32px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #101d37;
+  line-height: 45px;
+  margin-bottom: 24px;
+  padding-left: 8px;
+}
+.tags {
+  @include flex(flex-start);
+  flex-wrap: wrap;
+  margin-bottom: 64px;
+  padding-left: 8px;
+  margin-right: -19px;
+  .tag-item {
+    width: 216px;
+    height: 65px;
+    background: #f6f7fa;
+    border-radius: 10px;
+    @include flex();
+    font-size: 24px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #2d3950;
+    box-sizing: border-box;
+    border: 0;
+    margin-bottom: 20px;
+    margin-right: 19px;
+    &.active {
+      background: #e5fbf4;
+      border-radius: 10px;
+      border: 1px solid #00cc88;
+      color: #00cc88;
+    }
+  }
+}
+.ipt-box {
+  width: 694px;
+  height: 65px;
+  background: #f5f6fa;
+  border-radius: 10px;
+  margin: 0 auto 64px;
+  font-size: 24px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #111e38;
+  box-sizing: border-box;
+  padding: 0 24px;
+}
+.btn {
+  margin-bottom: 24px;
+}
+.button-grey {
+  border: 1px solid #c2c6d0;
+}

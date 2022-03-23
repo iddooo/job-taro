@@ -2,7 +2,7 @@
   <view class="index">
       <view class="head">
           <view class="avater">
-              <image src="https://img.langcms.com/login/avater.png"></image>
+              <image src="https://img.langcms.com/index/"></image>
           </view>
           <view class="green">更换头像</view>
       </view>

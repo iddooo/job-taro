@@ -137,12 +137,10 @@
 .job-box{
     margin: 16px 16px 0 16px;
     .job-card{
-        margin-bottom: 16px;
-        padding-top: 24px;
-        padding-bottom: 34px;
-        padding-left: 25px;
+        padding: 24px;
         background-color: #fff;
         border-radius: 12px;
+        margin-bottom: 16px;
         .title{
             font-size: 32px;
             font-family: PingFangSC-Regular, PingFang SC;
@@ -220,6 +218,7 @@
                 background: #E5FBF4;
                 border-radius: 17px 0px 0px 17px;
                 border: 0;
+                margin-right: -24px;
             }
         }
     }

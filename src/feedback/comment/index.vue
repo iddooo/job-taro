@@ -16,18 +16,18 @@
             <image class="star-icon" src="https://img.langcms.com/index/star@2x.png"></image>
             <image class="star-icon" src="https://img.langcms.com/index/star@2x.png"></image>
             <image class="star-icon" src="https://img.langcms.com/index/star@2x.png"></image>
-            <image class="star-icon" src="https://img.langcms.com/index/star1@2x.png"></image>
+            <image class="star-icon" src="https://img.langcms.com/index/start1@2x.png"></image>
         </view>
         <view class="level">比较满意！</view>
 
         <view class="content">
-            <textarea class="text" name="" id="" cols="30" rows="10" placeholder="您的评价将对其他求职者有参考意义"></textarea>
+            <textarea class="text" name="" id="" cols="30" rows="10" placeholder-class="plchd" placeholder="您的评价将对其他求职者有参考意义"></textarea>
             <view class="image">
                 <image src=""></image>
             </view>
         </view>
 
-        <button class="button btn">提交评论</button>
+        <button class="button-primary btn" @tap="goCommnetResult">提交评论</button>
 
     </view>
 </template>
@@ -47,6 +47,11 @@ export default {
         }
     },
     methods: {
+        goCommnetResult(){
+            Taro.navigateTo({
+                url: '/feedback/commentResult/index'
+            })
+        }
     },
 }
 </script>

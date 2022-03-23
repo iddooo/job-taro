@@ -21,7 +21,7 @@
       <view class="ctr-progress">
           <view class="status">待录取</view>
           <view class="tips">主动联系商家，录取概率更高哦，
-              <view class="call">点我联系商家 <image src="https://img.langcms.com/index/lxsj@2x.png"></image></view>
+              <view class="call">点我联系商家 > </view>
           </view>
 
           <view class="progress">

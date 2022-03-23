@@ -1,6 +1,6 @@
 <template>
   <view class="index">
-      <view class="notice">
+      <view class="notice" @tap="goNoticeDetail">
           <view class="time flex-ct-ct">8月1日 上午 10:00</view>
           <view class="info">
               <view class="font1">8月5日 系统通知</view>
@@ -8,7 +8,7 @@
               <view class="font3">一大波企业正在招聘，福利多多，快来看看新的职位是否有你需要的吧～</view>
               <view class="link flex-ct-btw">
                   <view class="font3">点击查看</view>
-                  <image class="arrow-icon" src="https://img.langcms.com/message/message/arrow.png"></image>
+                  <image class="arrow-icon" src="https://img.langcms.com/message/arrow.png"></image>
               </view>
           </view>
       </view>
@@ -47,6 +47,11 @@ export default {
   },
   data() {
     return {
+        goNoticeDetail(){
+            Taro.navigateTo({
+                url: '/message/noticeDetail/index'
+            })
+        }
     };
   },
   

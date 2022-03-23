@@ -17,7 +17,7 @@
                 <view class="score">0.00 元</view>
                 <view class="name flex-ct">
                     <view>账户余额</view>
-                  <image class="arrow-icon" src="https://img.langcms.com/message/message/arrow.png"></image>
+                  <image class="arrow-icon" src="https://img.langcms.com/message/arrow.png"></image>
                 </view>
             </view>
             <view class="line"></view>
@@ -25,7 +25,7 @@
                 <view class="score">0.00 元</view>
                 <view class="name flex-ct">
                     <view>平台币提现</view>
-                  <image class="arrow-icon" src="https://img.langcms.com/message/message/arrow.png"></image>
+                  <image class="arrow-icon" src="https://img.langcms.com/message/arrow.png"></image>
                 </view>
             </view>
             <view class="line"></view>
@@ -33,13 +33,13 @@
                 <view class="score">0.00 元</view>
                 <view class="name flex-ct">
                     <view>立即兑换</view>
-                  <image class="arrow-icon" src="https://img.langcms.com/message/message/arrow.png"></image>
+                  <image class="arrow-icon" src="https://img.langcms.com/message/arrow.png"></image>
                 </view>
             </view>
         </view>
     </view>
 
-    <view class="profile">
+    <view class="profile" @tap="goResume">
         <image src="https://img.langcms.com/mine/wsjl@1x.png"></image>
         <view class="percent flex-ct">完善度 <view class="green">72%</view>,完善简历可提高录取率~</view>
         <view class="resume-btn flex-ct-ct">去完善</view>
@@ -154,6 +154,11 @@ export default {
       goCollections(){
           Taro.navigateTo({
             url: '/mine/collections/index'
+        })
+      },
+      goResume(){
+          Taro.navigateTo({
+            url: '/resume/userInfo/index'
         })
       }
   },
