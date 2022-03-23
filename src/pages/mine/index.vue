@@ -17,7 +17,7 @@
                 <view class="score">0.00 元</view>
                 <view class="name flex-ct">
                     <view>账户余额</view>
-                  <image class="arrow-icon" src="https://img.langcms.com/message/message/arrow.png"></image>
+                  <image class="arrow-icon" src="https://img.langcms.com/message/arrow.png"></image>
                 </view>
             </view>
             <view class="line"></view>
@@ -25,7 +25,7 @@
                 <view class="score">0.00 元</view>
                 <view class="name flex-ct">
                     <view>平台币提现</view>
-                  <image class="arrow-icon" src="https://img.langcms.com/message/message/arrow.png"></image>
+                  <image class="arrow-icon" src="https://img.langcms.com/message/arrow.png"></image>
                 </view>
             </view>
             <view class="line"></view>
@@ -33,7 +33,7 @@
                 <view class="score">0.00 元</view>
                 <view class="name flex-ct">
                     <view>立即兑换</view>
-                  <image class="arrow-icon" src="https://img.langcms.com/message/message/arrow.png"></image>
+                  <image class="arrow-icon" src="https://img.langcms.com/message/arrow.png"></image>
                 </view>
             </view>
         </view>

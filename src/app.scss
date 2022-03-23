@@ -125,3 +125,34 @@ image{
     width: 100%;
     height: 100%;
 }
+
+.button-grey,
+.button-primary {
+    height: 88px;
+    border-radius: 28px;
+    font-size: 30px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    @include flex();
+    box-sizing: border-box;
+    border: 0;
+    image {
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+    }
+}
+.button-grey {
+    background: #f5f6fa;
+    color: #0f1d36;
+}
+
+.button-primary {
+    background: #00cc88;
+    color: #fff;
+    &.plain {
+        color: #00cc88;
+        background-color: #fff;
+        border: 1px solid #00cc88;
+    }
+}

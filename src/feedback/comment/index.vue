@@ -16,7 +16,7 @@
             <image class="star-icon" src="https://img.langcms.com/index/star@2x.png"></image>
             <image class="star-icon" src="https://img.langcms.com/index/star@2x.png"></image>
             <image class="star-icon" src="https://img.langcms.com/index/star@2x.png"></image>
-            <image class="star-icon" src="https://img.langcms.com/index/star1@2x.png"></image>
+            <image class="star-icon" src="https://img.langcms.com/index/start1@2x.png"></image>
         </view>
         <view class="level">比较满意！</view>
 
@@ -27,7 +27,7 @@
             </view>
         </view>
 
-        <button class="button btn">提交评论</button>
+        <button class="button-primary btn">提交评论</button>
 
     </view>
 </template>

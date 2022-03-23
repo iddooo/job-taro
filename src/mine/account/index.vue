@@ -9,7 +9,7 @@
 
     <view class="detail">
         全部工资明细
-        <image class="arrow-icon" src="https://img.langcms.com/message/message/arrow.png"></image>
+        <image class="arrow-icon" src="https://img.langcms.com/message/arrow.png"></image>
     </view>
   </view>
 </template>

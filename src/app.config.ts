@@ -30,7 +30,7 @@ export default {
     },
     {
       root: "feedback",
-      pages: ["feedback/index", "complaint/index", "comment/index"],
+      pages: ["feedback/index", "complaint/index", "comment/index","myFdbkList/index"],
     },
     {
       root: "shop",

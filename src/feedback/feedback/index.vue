@@ -18,7 +18,7 @@
             </view>
         </view>
 
-        <button class="button btn">提交反馈</button>
+        <button class="button-primary btn">提交反馈</button>
     </view>
 </template>
 

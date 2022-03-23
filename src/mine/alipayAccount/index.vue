@@ -18,7 +18,7 @@
 
       </view>
 
-    <button class="button btn disabled">确认</button>
+    <button class="button disabled btn">确认</button>
 
     <view v-show="isShowTips">
         <view class="model"></view>

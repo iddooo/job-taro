@@ -8,7 +8,7 @@
               <view class="font3">一大波企业正在招聘，福利多多，快来看看新的职位是否有你需要的吧～</view>
               <view class="link flex-ct-btw">
                   <view class="font3">点击查看</view>
-                  <image class="arrow-icon" src="https://img.langcms.com/message/message/arrow.png"></image>
+                  <image class="arrow-icon" src="https://img.langcms.com/message/arrow.png"></image>
               </view>
           </view>
       </view>
