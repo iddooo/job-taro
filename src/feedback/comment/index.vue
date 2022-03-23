@@ -27,7 +27,7 @@
             </view>
         </view>
 
-        <button class="button-primary btn">提交评论</button>
+        <button class="button-primary btn" @tap="goCommnetResult">提交评论</button>
 
     </view>
 </template>
@@ -47,6 +47,11 @@ export default {
         }
     },
     methods: {
+        goCommnetResult(){
+            Taro.navigateTo({
+                url: '/feedback/commentResult/index'
+            })
+        }
     },
 }
 </script>
