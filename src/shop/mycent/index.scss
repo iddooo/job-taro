@@ -1,1 +1,80 @@
 @import '../../app.scss';
+
+.mycent {
+  min-height: 100vh;
+  background: #FEFEFE;
+
+  .banner {
+    width: 702px;
+    height: 220px;
+    background: url(https://img.langcms.com/shop/bg-cent.png) no-repeat center;
+    background-size: 702px 220px;
+    border-radius: 12px;
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .filter {
+    margin-top: 6px;
+    border-bottom: 2px solid #F1F1F1;
+  }
+
+  .content {
+    width: 685px;
+    margin: 0 auto;
+
+    .content-item {
+      height: 163px;
+      width: 100%;
+      border-bottom: 1px solid #F3F3F3;
+      position: relative;
+
+      .content-item-title {
+        // position: absolute;
+        // top: 32px;
+        // left: 0;
+        margin-top: 32px;
+        height: 35px;
+        font-size: 30px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #414141;
+        line-height: 35px;
+        width: 500px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      .content-item-date {
+        width: 280px;
+        height: 33px;
+        font-size: 24px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #9C9C9C;
+        line-height: 33px;
+        margin-top: 22px;
+      }
+
+      .content-item-count {
+        position: absolute;
+        width: 155px;
+        height: 35px;
+        font-size: 30px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #414141;
+        line-height: 35px;
+        top: 32px;
+        right: 0;
+        text-align: right;
+
+        &.income {
+          color: #EE2214;
+        }
+      }
+    }
+  }
+}

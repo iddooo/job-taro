@@ -18,12 +18,7 @@
         </view>
       </view>
     </view>
-    <view class="tab">
-      <view class="tab-common active">全部</view>
-      <view class="tab-common">家居百货</view>
-      <view class="tab-common">服饰鞋包</view>
-      <view class="tab-common">美妆个护</view>
-    </view>
+    <tabview :tabCode="tabCode" :tabList="tabList" @changeTabCode="changeTabCode" />
     <filterpicker
       :selectorList="selectorList"
       :selectorData="selectorData"
@@ -128,6 +123,7 @@
 import { AtRadio } from 'taro-ui-vue'
 import Taro from '@tarojs/taro'
 import filterpicker from '../../components/filterpicker'
+import tabview from '../../components/tabview'
 import './index.scss'
 definePageConfig({
   navigationBarTitleText: '牛犊梦商城',
@@ -141,21 +137,28 @@ Taro.setBackgroundColor({
 export default {
   components: {
     AtRadio,
-    filterpicker
+    filterpicker,
+    tabview
   },
   data() {
     return {
-      selector: ['美国', '中国', '巴西', '日本'],
       selectorData: {
         sort: '0',
-        score: '1',
-        cash: '3'
+        score: '0',
+        cash: '0'
       },
       onlyTask: false,
       selectorList: [
         { selector: ['默认排序', '按销量', '按时间'], key: 'sort' },
         { selector: ['积分', '>100', '>500'], key: 'score' },
         { selector: ['现金', '0-100', '>500'], key: 'cash' }
+      ],
+      tabCode: 0,
+      tabList: [
+        { code: 0, name: '全部' },
+        { code: 1, name: '家居百货' },
+        { code: 2, name: '服饰鞋包' },
+        { code: 3, name: '美妆个护' }
       ]
     }
   },
@@ -171,6 +174,9 @@ export default {
       Taro.navigateTo({
         url: '/shop/' + url
       })
+    },
+    changeTabCode(code) {
+      this.tabCode = code
     }
   }
 }

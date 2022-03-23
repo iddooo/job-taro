@@ -64,5 +64,27 @@ export default {
     background: url(https://img.langcms.com/shop/sanjiao.png) no-repeat right center;
     background-size: 18px 9px;
   }
+
+  .radio {
+    height: 94px;
+    line-height: 94px;
+    margin-right: 30px;
+    float: right;
+    font-size: 27px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #414141;
+    position: relative;
+
+    .radio-box {
+      width: 32px;
+      height: 32px;
+      border-radius: 5px;
+      border: 1px solid #cccccc;
+      position: absolute;
+      top: 31px;
+      left: -40px;
+    }
+  }
 }
 </style>

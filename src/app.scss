@@ -19,23 +19,28 @@ $outColor: #111e38;
   align-items: $align;
   justify-content: $justify;
 }
+
 @mixin center {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 /* 多行省略 */
 @mixin elips($n: 1) {
   overflow: hidden;
   text-overflow: ellipsis;
-  @if $n == 1 {
+
+  @if $n==1 {
     white-space: nowrap;
   }
+
   display: -webkit-box;
   -webkit-line-clamp: $n;
   -webkit-box-orient: vertical;
 }
+
 .model {
   position: fixed;
   top: 0;
@@ -44,6 +49,7 @@ $outColor: #111e38;
   bottom: 0;
   background: rgba(0, 0, 0, 0.6);
 }
+
 @mixin triangle($width, $height, $color, $direction) {
   $width: $width/2;
   $color-border-style: $height solid $color;
@@ -55,23 +61,31 @@ $outColor: #111e38;
     border-bottom: $color-border-style;
     border-left: $transparent-border-style;
     border-right: $transparent-border-style;
-  } @else if $direction==right {
+  }
+
+  @else if $direction==right {
     border-left: $color-border-style;
     border-top: $transparent-border-style;
     border-bottom: $transparent-border-style;
-  } @else if $direction==down {
+  }
+
+  @else if $direction==down {
     border-top: $color-border-style;
     border-left: $transparent-border-style;
     border-right: $transparent-border-style;
-  } @else if $direction==left {
+  }
+
+  @else if $direction==left {
     border-right: $color-border-style;
     border-top: $transparent-border-style;
     border-bottom: $transparent-border-style;
   }
 }
+
 .flex-ct-btw {
   @include flex(space-between);
 }
+
 .flex-ct-end {
   @include flex(flex-end);
 }
@@ -79,49 +93,68 @@ $outColor: #111e38;
 .flex-ct-ard {
   @include flex(space-around);
 }
+
 .flex-ct-ct {
   @include flex();
 }
+
 .flex-ct {
   @include flex(flex-start);
 }
+
 .flex-btm {
   display: flex;
   align-items: baseline;
 }
+
 .flex-ct-wrap {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
+
 button::after {
   border: 0;
 }
-.button{
-    background: #00cc88;
-    border-radius: 41px;
-    margin: 0 auto;
-    font-size: 30px;
-    font-family: PingFangSC-Regular, PingFang SC;
-    font-weight: 400;
-    color: #ffffff;
-    @include flex();
-    width: 100%;
-    height: 82px;
-    box-sizing: border-box;
-    border: 0;
-    &.plain{
-        background-color: #fff;
-        border: 1px solid #00cc88;
-        color: #00cc88;
-    }
-    &.disabled{
-        background: #E5E7EE;
-        color: #878D99;
-    }
+
+.button {
+  background: #00cc88;
+  border-radius: 41px;
+  margin: 0 auto;
+  font-size: 30px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #ffffff;
+  @include flex();
+  width: 100%;
+  height: 82px;
+  box-sizing: border-box;
+  border: 0;
+
+  &.plain {
+    background-color: #fff;
+    border: 1px solid #00cc88;
+    color: #00cc88;
+  }
+
+  &.disabled {
+    background: #E5E7EE;
+    color: #878D99;
+  }
 }
 
-image{
-    width: 100%;
-    height: 100%;
+image {
+  width: 100%;
+  height: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.search-icon {
+  background: url(https://img.langcms.com/index/ss.png) no-repeat left center;
+  background-size: 25px 25px;
+  width: 25px;
+  height: 25px;
 }
