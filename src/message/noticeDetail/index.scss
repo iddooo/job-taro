@@ -1,0 +1,36 @@
+@import "../../app.scss";
+
+  .info {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    position: relative;
+    .font1 {
+      font-size: 24px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #838e9a;
+      line-height: 33px;
+    }
+    .font2 {
+      font-size: 32px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #101d37;
+      line-height: 45px;
+    }
+    .font3 {
+      font-size: 28px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #434343;
+      line-height: 42px;
+      margin-top: 30px;
+    }
+    .cover {
+      width: 699px;
+      height: 368px;
+      margin-top: 24px;
+      background-color: #eee;
+    }
+  }

@@ -26,7 +26,7 @@ export default {
     },
     {
       root: "message",
-      pages: ["notice/index"],
+      pages: ["notice/index","noticeDetail/index"],
     },
     {
       root: "feedback",
@@ -49,6 +49,17 @@ export default {
         "myscore/index",
       ],
     },
+    {
+        root: "resume",
+        pages: [
+          "userInfo/index",
+          "education/index",
+          "experience/index",
+          "description/index",
+          "resumeList/index",
+          "onlineResume/index",
+        ],
+      },
   ],
   window: {
     backgroundTextStyle: "light",

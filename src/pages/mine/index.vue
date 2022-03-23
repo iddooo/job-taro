@@ -39,7 +39,7 @@
         </view>
     </view>
 
-    <view class="profile">
+    <view class="profile" @tap="goResume">
         <image src="https://img.langcms.com/mine/wsjl@1x.png"></image>
         <view class="percent flex-ct">完善度 <view class="green">72%</view>,完善简历可提高录取率~</view>
         <view class="resume-btn flex-ct-ct">去完善</view>
@@ -154,6 +154,11 @@ export default {
       goCollections(){
           Taro.navigateTo({
             url: '/mine/collections/index'
+        })
+      },
+      goResume(){
+          Taro.navigateTo({
+            url: '/resume/userInfo/index'
         })
       }
   },

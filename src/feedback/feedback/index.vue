@@ -12,7 +12,7 @@
         </view>
         
         <view class="content">
-            <textarea class="text" name="" id="" cols="30" rows="10" placeholder="结束当前任务，需要提交证明材料"></textarea>
+            <textarea class="text" name="" id="" placeholder-class="plchd" placeholder="结束当前任务，需要提交证明材料"></textarea>
             <view class="image">
                 <image src=""></image>
             </view>

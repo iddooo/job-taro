@@ -94,8 +94,13 @@ $outColor: #111e38;
   align-items: center;
   flex-wrap: wrap;
 }
-button::after {
-  border: 0;
+
+button{
+    padding: 0;
+    margin: 0;
+    &::after {
+        border: 0;
+      }
 }
 .button{
     background: #00cc88;
@@ -155,4 +160,9 @@ image{
         background-color: #fff;
         border: 1px solid #00cc88;
     }
+}
+
+.plchd{
+    font-size: 32px;
+    color: #C2C6D0;
 }

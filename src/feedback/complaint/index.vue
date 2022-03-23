@@ -12,18 +12,18 @@
 
         <view class="title">问题说明</view>
         <view class="content">
-            <textarea class="text" name="" id="" cols="30" rows="10" placeholder="请详细描述您的投诉内容，提供完整的证据链截图，便于我们为您快速处理（至少20字以上）"></textarea>
+            <textarea class="text" name="" id="" cols="30" rows="10" placeholder-class="plchd" placeholder="请详细描述您的投诉内容，提供完整的证据链截图，便于我们为您快速处理（至少20字以上）"></textarea>
             <view class="image">
                 <image src=""></image>
             </view>
         </view>
 
         <view class="title">商家联系方式</view>
-        <input class="ipt-box" type="text" placeholder="输入联系方式（电话/微信/QQ/邮箱）">
+        <input class="ipt-box" type="text" placeholder-class="plchd" placeholder="输入联系方式（电话/微信/QQ/邮箱）">
 
 
         <view class="title">我的联系方式</view>
-        <input class="ipt-box" type="text" placeholder="输入联系方式（电话/微信/QQ/邮箱）">
+        <input class="ipt-box" type="text" placeholder-class="plchd" placeholder="输入联系方式（电话/微信/QQ/邮箱）">
 
 
         <button class="button-primary btn">提交评价</button>

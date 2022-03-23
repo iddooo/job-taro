@@ -1,0 +1,37 @@
+@import "../userInfo/index.scss";
+.form-label {
+    width: 194px!important;
+}
+
+.save {
+  width: 698px;
+  margin: 36px auto;
+}
+
+.picker-range {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  .picker {
+    width: 220px;
+  }
+  .range {
+    width: 60px;
+    text-align: center;
+  }
+}
+
+.grey {
+  color: #c2c6d0;
+}
+
+.radio {
+  font-size: 30px;
+  font-family: Source Han Sans CN-Regular, Source Han Sans CN;
+  font-weight: 400;
+  color: #101d37;
+  display: flex;
+  align-items: center;
+  margin-left: 36px;
+    margin-top: 26px;
+}

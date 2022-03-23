@@ -21,7 +21,7 @@
         <view class="level">比较满意！</view>
 
         <view class="content">
-            <textarea class="text" name="" id="" cols="30" rows="10" placeholder="您的评价将对其他求职者有参考意义"></textarea>
+            <textarea class="text" name="" id="" cols="30" rows="10" placeholder-class="plchd" placeholder="您的评价将对其他求职者有参考意义"></textarea>
             <view class="image">
                 <image src=""></image>
             </view>
