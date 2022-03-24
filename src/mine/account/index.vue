@@ -7,7 +7,7 @@
       <view class="other-way" @tap="goAlipayAccount">其他方式提现</view>
     </view>
 
-    <view class="detail">
+    <view class="detail" @tap="goSalaryDetails">
         全部工资明细
         <image class="arrow-icon" src="https://img.langcms.com/message/arrow.png"></image>
     </view>
@@ -32,6 +32,11 @@ export default {
       Taro.navigateTo({
         url: '/mine/alipayAccount/index'
       })
+    },
+    goSalaryDetails(){
+        Taro.navigateTo({
+            url: '/mine/salaryDetails/index'
+        })
     }
   }
 }

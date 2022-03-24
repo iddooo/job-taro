@@ -8,7 +8,7 @@
       @change="change($event,item)"
     >{{labelMap[item.key]}}</picker>
     <view class="radio" @tap="onlyTask = !onlyTask;$emit('changeRadio',onlyTask)">
-      <view class="radio-box"></view>仅看积分兑换
+      <view class="radio-box"></view>{{!onlyRead ? '仅看积分兑换' : onlyRead}}
     </view>
   </view>
 </template>
@@ -19,7 +19,7 @@ import Taro from '@tarojs/taro'
 
 export default {
   components: {},
-  props: ['selectorList', 'selectorData'],
+  props: ['selectorList', 'selectorData','onlyRead'],
   data() {
     return {
       labelMap: {},

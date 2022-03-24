@@ -1,0 +1,49 @@
+@import "../../app.scss";
+
+.index {
+  background: #fff;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.total{
+    font-size: 27px;
+    font-family: Source Han Sans CN-Regular, Source Han Sans CN;
+    font-weight: 400;
+    color: #414141;
+    line-height: 38px;
+    padding-left: 30px;
+    margin-bottom: 6px;
+}
+.list{
+    .list-item{
+        padding: 66px 32px 0;
+        position: relative;
+        .list-item-title{
+            font-size: 30px;
+            font-family: Source Han Sans CN-Regular, Source Han Sans CN;
+            font-weight: 400;
+            color: #414141;
+            line-height: 35px;
+            margin-bottom: 22px;
+        }
+        .list-item-time{
+            font-size: 24px;
+            font-family: Source Han Sans CN-Regular, Source Han Sans CN;
+            font-weight: 400;
+            color: #9C9C9C;
+            line-height: 34px;
+        }
+        .count{
+            position: absolute;
+            right: 32px;
+            top: 45px;
+            font-size: 30px;
+            font-family: Source Han Sans CN-Medium, Source Han Sans CN;
+            font-weight: 500;
+            color: #414141;
+            line-height: 35px;
+            text-align: right;
+        }
+    }
+}
+

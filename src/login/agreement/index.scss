@@ -1,0 +1,44 @@
+@import "../../app.scss";
+
+.index {
+  height: 100vh;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 24px;
+}
+.xx {
+  font-size: 32px;
+  font-family: Source Han Sans CN-Normal, Source Han Sans CN;
+  font-weight: 400;
+  color: #101d37;
+  line-height: 45px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.date {
+  text-align: right;
+  font-size: 24px;
+  font-family: Source Han Sans CN-Regular, Source Han Sans CN;
+  font-weight: 400;
+  color: #434343;
+  line-height: 34px;
+  margin-bottom: 8px;
+}
+.indent{
+    text-indent:50px;
+}
+.section{
+    padding-top: 24px;
+}
+.article{
+    font-size: 28px;
+    font-family: Source Han Sans CN-Regular, Source Han Sans CN;
+    font-weight: 400;
+    color: #434343;
+    line-height: 42px;
+
+}
+.headline{
+    margin-top: 80px;
+    font-weight: 700;
+}

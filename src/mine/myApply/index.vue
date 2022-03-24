@@ -1,11 +1,13 @@
 <template>
   <view class="index">
-      <view class="tabs flex-ct-btw">
+      <!-- <view class="tabs flex-ct-btw">
           <view class="tab-item active">全部</view>
           <view class="tab-item">已报名</view>
           <view class="tab-item">待支付</view>
           <view class="tab-item">已完成</view>
-      </view>
+      </view> -->
+    <tabview color="green" :tabCode="tabCode" :tabList="tabList" @changeTabCode="changeTabCode" />
+
 
     <!-- JobCard start-->
     <view class="job-box">
@@ -87,6 +89,7 @@
 <script>
 import './index.scss' 
 import Taro from '@tarojs/taro'
+import tabview from '../../components/tabview'
 
 definePageConfig({
   navigationBarTitleText: '我的投递'
@@ -94,9 +97,17 @@ definePageConfig({
 
 export default {
     components: {
+        tabview
   },
   data () {
     return {
+        tabCode: 0,
+        tabList: [
+            { code: 0, name: '全部' },
+            { code: 1, name: '已报名' },
+            { code: 2, name: '待支付' },
+            { code: 3, name: '已完成' }
+        ]
     }
   },
   methods: {
@@ -109,7 +120,10 @@ export default {
         Taro.navigateTo({
             url: '/job/jobProgress/index'
         })
-      },
-  },
+    },
+    changeTabCode(code) {
+      this.tabCode = code
     }
+  },
+}
 </script>

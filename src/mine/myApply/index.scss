@@ -4,40 +4,12 @@
   background: #f5f6fa;
   height: 100vh;
 }
-.tabs {
-  width: 750px;
-  height: 95px;
-  background: #ffffff;
-  box-sizing: border-box;
-  padding: 0 48px;
+.tab {
   position: fixed;
   left: 0;
   top: 0;
-  .tab-item {
-    position: relative;
-    font-size: 30px;
-    font-family: PingFangSC-Regular, PingFang SC;
-    font-weight: 400;
-    color: #6d6d6d;
-    line-height: 95px;
-    &.active {
-      font-size: 30px;
-      font-family: PingFangSC-Medium, PingFang SC;
-      font-weight: 500;
-      color: #3a3a3a;
-      &::after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 0;
-        width: 62px;
-        height: 7px;
-        background: #02e599;
-        border-radius: 4px;
-      }
-    }
-  }
+  width: 100%;
+  background-color: #fff;
 }
 .job-box {
     margin-top: 95px;

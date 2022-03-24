@@ -35,7 +35,7 @@
 
       <view class="agreement">
           <view class="circle active"></view>
-          <view>登录并同意<text class="underline">牛犊梦用户协议、隐私协议</text>｜ 我不同意</view>
+          <view>登录并同意<text class="underline" @tap="goAgreement">牛犊梦用户协议、隐私协议</text>｜ 我不同意</view>
       </view>
 
   </view>
@@ -60,6 +60,11 @@ export default {
       goPrefer(){
         Taro.navigateTo({
             url:'/login/prefer/index'
+        })
+      },
+      goAgreement(){
+          Taro.navigateTo({
+            url:'/login/agreement/index'
         })
       }
   }
