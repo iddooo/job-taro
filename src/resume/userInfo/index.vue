@@ -101,7 +101,7 @@
 
         <view class="btns">
             <button class="button-grey btn">在电脑填写</button>
-            <button class="button-primary btn">保存</button>
+            <button class="button-primary btn" @tap="goMyResume">保存</button>
         </view>
 
   </view>
@@ -142,6 +142,11 @@ export default {
                 url: '/resume/description/index'
             })
       },
+      goMyResume(){
+          Taro.navigateTo({
+                url: '/resume/myResume/index'
+            })
+      }
     },
       
 

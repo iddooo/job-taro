@@ -3,6 +3,103 @@
 .index {
   height: 100vh;
   background: #f5f6fa;
-  height: 100vh;
+  box-sizing: border-box;
+  padding-bottom: 128px;
+}
+.ctr {
+  background-color: #fff;
+  padding: 24px 24px 0;
+}
+.font {
+  color: #101d37;
+  line-height: 45px;
+}
+.font-38 {
+  font-size: 38px;
+  @extend .font;
+}
+.font-32 {
+  font-size: 32px;
+  @extend .font;
+  padding-bottom: 16px;
+}
+.font-30 {
+  font-size: 30px;
+  @extend .font;
+}
+.font-28 {
+  font-size: 28px;
+  @extend .font;
+  margin-bottom: 8px;
+}
+.font-24 {
+  font-size: 24px;
+  color: #1f2b44;
+  line-height: 34px;
+  &.grey {
+    color: #808999;
+  }
 }
 
+.mb16 {
+  margin-bottom: 16px;
+}
+
+.mb13 {
+  margin-bottom: 13px;
+}
+
+.avater {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}
+
+.part {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-bottom: 2px solid #e8e9eb;
+  &.part-f {
+    padding-bottom: 52px;
+  }
+  &.part-s {
+    padding-bottom: 45px;
+  }
+  &.part-last {
+    border-bottom: 0;
+  }
+}
+
+.info {
+  padding: 21px 21px 46px;
+  font-size: 24px;
+  font-family: Source Han Sans CN-Regular, Source Han Sans CN;
+  font-weight: 400;
+  color: #101d37;
+  @include flex(flex-start);
+  image {
+    width: 30px;
+    height: 32px;
+    margin-right: 14px;
+  }
+}
+
+.btns {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 137px;
+  background: #ffffff;
+  width: 100%;
+  @include flex(space-between);
+  box-sizing: border-box;
+  padding: 0 32px;
+  .btn {
+    width: 330px;
+  }
+  .button-grey {
+    color: #00cc88;
+  }
+}
