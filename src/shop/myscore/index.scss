@@ -1,1 +1,127 @@
-@import '../../app.scss';
+@import "../../app.scss";
+page {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.myscore {
+  background: #fefefe;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.head {
+  background: #fff;
+  margin-top: 24px;
+  .score-bg {
+    width: 702px;
+    height: 220px;
+    background: url(#{$baseImgUrl}/shop/score-bg.png) no-repeat 65px center
+      #f5f6fa;
+    background-size: 186px 180px;
+    border-radius: 12px;
+    margin: 0 auto;
+    position: relative;
+    .score-title {
+      position: absolute;
+      width: 104px;
+      height: 37px;
+      font-size: 26px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #757575;
+      line-height: 37px;
+      left: 325px;
+      top: 39px;
+    }
+    .score-count {
+      width: 167px;
+      height: 92px;
+      font-size: 66px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #ff7744;
+      line-height: 92px;
+      position: absolute;
+      left: 325px;
+      top: 80px;
+    }
+  }
+}
+
+.seach-input__input {
+  width: 702px;
+  height: 72px;
+  background: #f4f4f7;
+  border-radius: 36px;
+  margin: 8px auto 0;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-sizing: border-box;
+}
+
+.search-input {
+  position: relative;
+
+  .search-icon {
+    position: absolute;
+    left: 299px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.content {
+  position: absolute;
+  top: 315px;
+  bottom: 0;
+  overflow: auto;
+  width: 100%;
+  padding: 33px;
+  padding-top: 0;
+  box-sizing: border-box;
+  .content-body {
+    height: 100%;
+    overflow: auto;
+    .content-item {
+      height: 157px;
+      border-bottom: 1px solid #f1f1f1;
+      position: relative;
+      padding-top: 1px;
+    }
+    .content-item-title {
+      width: 593px;
+      height: 35px;
+      font-size: 30px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #414141;
+      line-height: 35px;
+      @include elips(1);
+      margin-top: 33px;
+      margin-bottom: 22px;
+    }
+    .content-item-date {
+      width: 219px;
+      height: 33px;
+      font-size: 24px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #9c9c9c;
+      line-height: 33px;
+    }
+    .content-item-amount {
+      width: 117px;
+      height: 35px;
+      font-size: 30px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #ee2214;
+      line-height: 35px;
+      position: absolute;
+      right: 0px;
+      top: 33px;
+    }
+  }
+}

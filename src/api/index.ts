@@ -1,12 +1,13 @@
 import Taro from "@tarojs/taro";
 import md5 from "js-md5";
-import { appid, env, timeout, baseUrl } from "../common/const";
+import { env, timeout, baseUrl } from "../common/const";
 import { ResponseType } from "../interface/interface";
-let token = "";
+let token = Taro.getStorageSync("token");
 export function setToken(newToken: string): void {
   token = newToken;
+  Taro.setStorageSync("token", token);
 }
-function getSign(data: Object): string {
+function getSign(data: Object): any {
   const dataJson = JSON.stringify(data);
   return md5(`${dataJson}&token=${token}`);
 }
@@ -18,12 +19,14 @@ export function post({
   data: Object;
 }): Promise<ResponseType> {
   return new Promise((reslove, reject) => {
+    const brandInfo = Taro.getStorageSync("brandInfo");
+    const { appid, brandId } = brandInfo;
     Taro.request({
       url: baseUrl + url,
       method: "POST",
       header: {
         "Content-Type": "application/json",
-        "X-BrandId": "",
+        "X-BrandId": brandId,
         "X-AppId": appid,
         "X-Platform": env,
         "X-Token": token,
@@ -34,9 +37,9 @@ export function post({
       success: (res) => {
         if (res.statusCode === 200) {
           if (res.data.code === 0) {
-            reslove(res.data);
+            reslove(res.data.body);
           } else {
-            reject(res.data);
+            reject(res.data.body);
           }
         } else {
           reject(res);

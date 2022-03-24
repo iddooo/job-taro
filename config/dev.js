@@ -1,17 +1,16 @@
 module.exports = {
   env: {
-    NODE_ENV: '"development"'
+    NODE_ENV: '"development"',
   },
-  defineConstants: {
-  },
+  defineConstants: {},
   mini: {},
   h5: {
-    esnextModules: ['taro-ui']
+    esnextModules: ["taro-ui"],
   },
-  uglify: {
-    enable: true,
-    config: {
-      // 配置项同 https://github.com/mishoo/UglifyJS2#minify-options
-    }
-  }
-}
+  // uglify: {
+  //   enable: true,
+  //   config: {
+  //     // 配置项同 https://github.com/mishoo/UglifyJS2#minify-options
+  //   }
+  // }
+};

@@ -7,7 +7,7 @@ $mainColor: #1f2b44;
 $titleColor: #101d37;
 $subColor: #a4a9b4;
 $outColor: #111e38;
-
+$baseImgUrl: "https://img.langcms.com/";
 /* 宽高 */
 @mixin wh($width, $height: $width) {
   width: $width;
@@ -61,21 +61,15 @@ $outColor: #111e38;
     border-bottom: $color-border-style;
     border-left: $transparent-border-style;
     border-right: $transparent-border-style;
-  }
-
-  @else if $direction==right {
+  } @else if $direction==right {
     border-left: $color-border-style;
     border-top: $transparent-border-style;
     border-bottom: $transparent-border-style;
-  }
-
-  @else if $direction==down {
+  } @else if $direction==down {
     border-top: $color-border-style;
     border-left: $transparent-border-style;
     border-right: $transparent-border-style;
-  }
-
-  @else if $direction==left {
+  } @else if $direction==left {
     border-right: $color-border-style;
     border-top: $transparent-border-style;
     border-bottom: $transparent-border-style;
@@ -143,11 +137,10 @@ button {
   }
 
   &.disabled {
-    background: #E5E7EE;
-    color: #878D99;
+    background: #e5e7ee;
+    color: #878d99;
   }
 }
-
 
 .center {
   text-align: center;
@@ -201,5 +194,5 @@ image {
 
 .plchd {
   font-size: 32px;
-  color: #C2C6D0;
+  color: #c2c6d0;
 }
