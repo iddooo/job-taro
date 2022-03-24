@@ -1,5 +1,5 @@
 <template>
-     <view class="job-card">
+     <view class="job-card" @tap="goJobDetail">
         <view class="flex-ct-btw">
             <view class="title">招运营专员</view>
             <view class="flex-btm red">
@@ -30,12 +30,19 @@
 <script>
 // 按需引入, 更小的应用体积
 import './index.scss' 
+import Taro from '@tarojs/taro'
+
 export default {
     data () {
         return {
         }
     },
     methods: {
+        goJobDetail(){
+            Taro.navigateTo({
+                url: '/job/jobDetail/index'
+            })
+        }
     },
 }
 </script>

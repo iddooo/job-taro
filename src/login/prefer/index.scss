@@ -1,9 +1,10 @@
 @import "../../app.scss";
 
 .index {
-  min-height: 100vh;
+  height: 100vh;
   background: #fff;
   padding: 24px;
+  box-sizing: border-box;
 }
 .font-sub {
   font-size: 32px;

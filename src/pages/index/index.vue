@@ -59,7 +59,7 @@
     <!-- JobCard -->
     <view class="job-box">
         <view class="job-content">
-        <JobCard @tap="goJobDetail"></JobCard>
+        <JobCard></JobCard>
         <JobCard></JobCard>
         <JobCard></JobCard>
         <JobCard></JobCard>
@@ -175,14 +175,10 @@
 <script>
 // 按需引入, 更小的应用体积
 import './index.scss' 
-import Taro from '@tarojs/taro'
-import { AtButton} from "taro-ui-vue";
-import "taro-ui-vue/dist/style/components/button.scss";
 import JobCard from '../../components/JobCard/index.vue'
 
 export default {
     components: {
-        AtButton,
         JobCard
   },
   data () {
@@ -195,11 +191,7 @@ export default {
     handleClick () {
       e.stopPropagation() // 阻止冒泡
     },
-    goJobDetail(){
-        Taro.navigateTo({
-            url: '/job/jobDetail/index'
-        })
-    }
+    
   },
     }
 </script>

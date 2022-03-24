@@ -2,7 +2,7 @@
 
 .index {
   background: #f5f6fa;
-  min-height: 100vh;
+  height: 100vh;
 }
 .tabs {
   width: 750px;
@@ -10,6 +10,9 @@
   background: #ffffff;
   box-sizing: border-box;
   padding: 0 48px;
+  position: fixed;
+  left: 0;
+  top: 0;
   .tab-item {
     position: relative;
     font-size: 30px;
@@ -37,6 +40,8 @@
   }
 }
 .job-box {
+    margin-top: 95px;
+  box-sizing: border-box;
   padding: 16px;
   // JobCard
   .job-card {

@@ -1,11 +1,16 @@
 .index {
-  min-height: 100vh;
+  height: 100vh;
   background: #fff;
 }
 .notice {
   width: 750px;
   height: 128px;
   border-bottom: 16px solid #f5f6fa;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #fff;
+  z-index: 9;
   .notice-icon {
     width: 100px;
     height: 100px;
@@ -29,6 +34,8 @@
   }
 }
 .msg-list {
+  margin-top: 144px;
+  background-color: #fff;
   .tips {
     font-size: 28px;
     font-family: PingFangSC-Regular, PingFang SC;

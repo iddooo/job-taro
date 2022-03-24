@@ -1,9 +1,14 @@
 <template>
   <view class="index">
-      <!-- JobCard start-->
         <JobCard></JobCard>
         <JobCard></JobCard>
-        <!-- JobCard end-->
+        <JobCard></JobCard>
+        <JobCard></JobCard>
+        <JobCard></JobCard>
+        <JobCard></JobCard>
+        <JobCard></JobCard>
+        <JobCard></JobCard>
+        <JobCard></JobCard>
   </view>
 </template>
 

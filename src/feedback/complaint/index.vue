@@ -26,10 +26,12 @@
         <input class="ipt-box" type="text" placeholder-class="plchd" placeholder="输入联系方式（电话/微信/QQ/邮箱）">
 
 
-        <button class="button-primary btn">提交评价</button>
-        <button class="button-grey" @tap="goMyFdbkList">
-            <image src="https://img.langcms.com/index/feed@2x.png"></image>我的申诉反馈
-        </button>
+        <view class="btn-box">
+            <button class="button-primary btn">提交评价</button>
+            <button class="button-grey" @tap="goMyFdbkList">
+                <image src="https://img.langcms.com/index/feed@2x.png"></image>我的申诉反馈
+            </button>
+        </view>
 
 
 
