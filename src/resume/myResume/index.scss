@@ -1,0 +1,90 @@
+@import "../../app.scss";
+
+.index {
+  height: 100vh;
+  background: #f5f6fa;
+  overflow: hidden;
+}
+
+.container{
+    box-sizing: border-box;
+    padding: 0 24px;
+    background-color: #fff;
+    font-size: 32px;
+        font-family: Source Han Sans CN-Regular, Source Han Sans CN;
+        font-weight: 400;
+        color: #101D37;
+        line-height: 45px;
+        overflow: hidden;
+        margin-bottom: 16px;
+    .line{
+        height: 100px;
+        padding-left: 8px;
+        padding-right: 24px;
+        @include flex(space-between);
+        &.border-btm{
+            border-bottom: 2px solid #E8E9EB;
+        }
+        .line-right{
+            @include flex(flex-end);
+            color: #808999;
+            image{
+                width: 10px;
+                height: 18px;
+                margin-left: 10px;
+                font-size: 30px;
+            }
+        }
+        .orange{
+            color: #FA6400;
+        }
+    }
+    .list{
+        padding-left: 8px;
+        padding-right: 30px;
+        background-color: #fff;
+        margin: 32px 0;
+        @include flex(space-between);
+        .list-left{
+            @include flex();
+            image{
+                width: 40px;
+                height: 40px;
+                margin-right: 12px;
+            }
+        }
+        .list-right{
+            color: #C2C6D0;
+        }
+    }
+}
+
+.button-primary{
+    width: 698px;
+    margin: 28px auto;
+}
+.slide{
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    width: 750px;
+    height: 199px;
+    background: #FFFFFF;
+    border-radius: 28px 28px 0px 0px;
+    font-size: 32px;
+    font-family: Source Han Sans CN-Regular, Source Han Sans CN;
+    font-weight: 400;
+    color: #101D37;
+    line-height: 88px;
+    .cancel{
+        border-top: 16px solid #F4F4F7;
+    }
+    transform: translateY(100%);
+    transition:  all .5s;
+    text-align: center;
+    z-index: 9;
+    &.slide-up{
+        transform: translateY(0);
+    }
+}
+

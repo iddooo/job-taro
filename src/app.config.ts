@@ -59,6 +59,7 @@ export default {
           "description/index",
           "resumeList/index",
           "onlineResume/index",
+          "myResume/index",
         ],
       },
   ],
