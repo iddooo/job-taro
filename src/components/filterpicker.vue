@@ -65,8 +65,7 @@ export default {
     font-weight: 400;
     color: #414141;
     padding-right: 22px;
-    background: url(https://img.langcms.com/shop/sanjiao.png) no-repeat right
-      center;
+    background: url(#{$baseImgUrl}shop/sanjiao.png) no-repeat right center;
     background-size: 18px 9px;
   }
 

@@ -1,13 +1,13 @@
-@import '../../app.scss';
+@import "../../app.scss";
 
 .mycent {
   height: 100vh;
-  background: #FEFEFE;
+  background: #fefefe;
 
   .banner {
     width: 702px;
     height: 220px;
-    background: url(https://img.langcms.com/shop/bg-cent.png) no-repeat center;
+    background: url(#{$baseImgUrl}shop/bg-cent.png) no-repeat center;
     background-size: 702px 220px;
     border-radius: 12px;
     margin-top: 24px;
@@ -17,7 +17,7 @@
 
   .filter {
     margin-top: 6px;
-    border-bottom: 2px solid #F1F1F1;
+    border-bottom: 2px solid #f1f1f1;
   }
 
   .content {
@@ -27,7 +27,7 @@
     .content-item {
       height: 163px;
       width: 100%;
-      border-bottom: 1px solid #F3F3F3;
+      border-bottom: 1px solid #f3f3f3;
       position: relative;
 
       .content-item-title {
@@ -53,7 +53,7 @@
         font-size: 24px;
         font-family: PingFangSC-Regular, PingFang SC;
         font-weight: 400;
-        color: #9C9C9C;
+        color: #9c9c9c;
         line-height: 33px;
         margin-top: 22px;
       }
@@ -72,7 +72,7 @@
         text-align: right;
 
         &.income {
-          color: #EE2214;
+          color: #ee2214;
         }
       }
     }

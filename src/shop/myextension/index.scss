@@ -98,8 +98,7 @@
           @include elips(1);
           padding-left: 55px;
           box-sizing: border-box;
-          background: url(https://img.langcms.com/shop/dingdan.png) no-repeat
-            left center;
+          background: url(#{$baseImgUrl}shop/dingdan.png) no-repeat left center;
           background-size: 40px 40px;
         }
         .content-item-cotact {
