@@ -1,4 +1,5 @@
 import Taro from "@tarojs/taro";
+// @ts-ignore
 import md5 from "js-md5";
 import { env, timeout, baseUrl } from "../common/const";
 import { ResponseType } from "../interface/interface";
@@ -9,6 +10,7 @@ export function setToken(newToken: string): void {
 }
 function getSign(data: Object): any {
   const dataJson = JSON.stringify(data);
+  // @ts-ignore
   return md5(`${dataJson}&token=${token}`);
 }
 export function post({
