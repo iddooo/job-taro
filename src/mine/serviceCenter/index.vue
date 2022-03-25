@@ -15,11 +15,11 @@
         <view class="card-info-title">关注问题</view>
         <view class="card-info-item flex-ct-btw">
             <view>举报中心 被骗诈骗</view>
-            <image class="arrow-icon" src="https://img.langcms.com/message/arrow.png"></image>
+            <image class="arrow-icon" :src="baseImgUrl + '/message/arrow.png' "></image>
         </view>
         <view class="card-info-item flex-ct-btw">
             <view>修改个人信息</view>
-            <image class="arrow-icon" src="https://img.langcms.com/message/arrow.png"></image>
+            <image class="arrow-icon" :src="baseImgUrl + '/message/arrow.png' "></image>
         </view>
     </view>
 
@@ -32,6 +32,7 @@
 <script>
 import './index.scss'
 import Taro from '@tarojs/taro'
+import { baseImgUrl } from '../../common/const';
 
 definePageConfig({
   navigationBarTitleText: '服务中心'
@@ -40,7 +41,9 @@ definePageConfig({
 export default {
   components: {},
   data() {
-    return {}
+    return {
+        baseImgUrl
+    }
   },
   methods: {
   }

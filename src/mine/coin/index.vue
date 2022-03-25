@@ -11,7 +11,7 @@
 
     <view class="detail flex-ct-ct" @tap="goCashOut">
         提现记录
-        <image class="arrow-icon" src="https://img.langcms.com/message/arrow.png"></image>
+        <image class="arrow-icon" :src="baseImgUrl + '/message/arrow.png' "></image>
     </view>
   </view>
 </template>
@@ -19,6 +19,7 @@
 <script>
 import './index.scss'
 import Taro from '@tarojs/taro'
+import { baseImgUrl } from '../../common/const';
 
 definePageConfig({
   navigationBarTitleText: '平台币提现'
@@ -27,7 +28,9 @@ definePageConfig({
 export default {
   components: {},
   data() {
-    return {}
+    return {
+        baseImgUrl
+    }
   },
   methods: {
     goCashOut() {

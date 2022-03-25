@@ -13,7 +13,7 @@
                     <picker mode="selector" :range="selector1" @change="change">
                         <view class="picker">本科</view>
                     </picker>
-                <image class="arrow-icon" src="https://img.langcms.com/message/arrow.png"></image>
+                <image class="arrow-icon" :src="baseImgUrl + '/message/arrow.png' "></image>
               </view>
           </view>
           <view class="form-item">
@@ -36,7 +36,7 @@
                     <picker mode="selector" :range="selector2" @change="change">
                         <view class="picker grey">软件开发</view>
                     </picker>
-                <image class="arrow-icon" src="https://img.langcms.com/message/arrow.png"></image>
+                <image class="arrow-icon" :src="baseImgUrl + '/message/arrow.png' "></image>
               </view>
           </view>
       </view>
@@ -49,6 +49,7 @@
 <script>
 // 按需引入, 更小的应用体积
 import Taro from '@tarojs/taro'
+import { baseImgUrl } from '../../common/const';
 
 import "./index.scss";
 definePageConfig({
@@ -60,7 +61,8 @@ export default {
   data() {
     return {
         selector1:['博士','硕士','专科','高中/职高/技校'],
-        selector2:['软件行业']
+        selector2:['软件行业'],
+        baseImgUrl,
     };
   },
   methods:{

@@ -3,14 +3,14 @@
       <!-- 导航栏 -->
       <view class="nav-box">
           <view class="loc-box">
-              <image class="loc-icon" src="https://img.langcms.com/index/zb@1x.png"></image>
+              <image class="loc-icon" :src="baseImgUrl + '/index/zb@1x.png' "></image>
               <view>北京</view>
           </view>
           <view class="ipt-box">
-              <image class="search-icon" src="https://img.langcms.com/index/ss@1x.png"></image>
+              <image class="search-icon" :src="baseImgUrl + '/index/ss@1x.png' "></image>
               <input class="ipt" type="text" placeholder-class="plchd" placeholder="职务" />
           </view>
-          <image @tap="navigateTo('/login/sign/index')" class="sign-box" src="https://img.langcms.com/index/sign@1x.png"></image>
+          <image @tap="navigateTo('/mine/sign/index')" class="sign-box" :src="baseImgUrl + '/index/sign@1x.png' "></image>
       </view>
 
     <!-- 轮播图 -->
@@ -20,7 +20,7 @@
             :autoplay="true"
             >
             <swiper-item>
-                <image class="banner-img" src="https://img.langcms.com/index/banner.png"></image>
+                <image class="banner-img" :src="baseImgUrl + '/index/banner.png' "></image>
             </swiper-item>
         </swiper>
     </view>
@@ -151,7 +151,7 @@
                 </scroll-view>
                 <view class="btns flex-ct-btw">
                     <view class="btn1 flex-ct-ct">
-                        <image src="https://img.langcms.com/index/cz@1x.png"></image>重置
+                        <image :src="baseImgUrl + '/index/cz@1x.png' "></image>重置
                     </view>
                     <view class="btn2 flex-ct-ct">确定</view>
                 </view>
@@ -170,6 +170,8 @@
 import './index.scss' 
 import JobCard from '../../components/JobCard/index.vue'
 import tabview from '../../components/tabview'
+import { baseImgUrl } from '../../common/const';
+import Taro from '@tarojs/taro'
 
 export default {
     components: {
@@ -178,6 +180,7 @@ export default {
   },
   data () {
     return {
+        baseImgUrl,
         isShowPost:false, //岗位
         isShowFilters:false, //筛选
 

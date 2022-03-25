@@ -13,7 +13,7 @@
                     <picker mode="selector" :range="selector" @change="change">
                         <view class="picker grey">请选择</view>
                     </picker>
-                <image class="arrow-icon" src="https://img.langcms.com/message/arrow.png"></image>
+                <image class="arrow-icon" :src="baseImgUrl + '/message/arrow.png' "></image>
               </view>
           </view>
           <view class="form-item">
@@ -36,7 +36,7 @@
                     <picker mode="selector" :range="selector" @change="change">
                         <view class="picker grey">请选择</view>
                     </picker>
-                <image class="arrow-icon" src="https://img.langcms.com/message/arrow.png"></image>
+                <image class="arrow-icon" :src="baseImgUrl + '/message/arrow.png' "></image>
               </view>
           </view>
           <view class="form-item">
@@ -64,6 +64,7 @@
 <script>
 // 按需引入, 更小的应用体积
 import Taro from '@tarojs/taro'
+import { baseImgUrl } from '../../common/const';
 
 import "./index.scss";
 definePageConfig({
@@ -74,7 +75,8 @@ export default {
   },
   data() {
     return {
-        selector:['男','女']
+        selector:['男','女'],
+        baseImgUrl,
     };
   },
   methods:{

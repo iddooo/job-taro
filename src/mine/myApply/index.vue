@@ -21,7 +21,7 @@
             </view>
             <view class="company flex-ct-btw">
                 <view class="flex-ct">
-                    <image class="c-icon" src="https://img.langcms.com/index/"></image>
+                    <image class="c-icon" :src="baseImgUrl + '/index/' "></image>
                     <view>北京有限公司</view>
                 </view>
                 <view class="r-btn">联系商家</view>
@@ -44,7 +44,7 @@
             </view>
             <view class="company flex-ct-btw">
                 <view class="flex-ct">
-                    <image class="c-icon" src="https://img.langcms.com/index/"></image>
+                    <image class="c-icon" :src="baseImgUrl + '/index/' "></image>
                     <view>北京有限公司</view>
                 </view>
                 <view class="r-btn">联系商家</view>
@@ -67,7 +67,7 @@
             </view>
             <view class="company flex-ct-btw">
                 <view class="flex-ct">
-                    <image class="c-icon" src="https://img.langcms.com/index/"></image>
+                    <image class="c-icon" :src="baseImgUrl + '/index/' "></image>
                     <view>北京有限公司</view>
                 </view>
                 <view class="r-btn">联系商家</view>
@@ -84,6 +84,7 @@
 import './index.scss' 
 import Taro from '@tarojs/taro'
 import tabview from '../../components/tabview'
+import { baseImgUrl } from '../../common/const';
 
 definePageConfig({
   navigationBarTitleText: '我的投递'
@@ -95,6 +96,7 @@ export default {
   },
   data () {
     return {
+        baseImgUrl,
         tabCode: 0,
         tabList: [
             { code: 0, name: '全部' },

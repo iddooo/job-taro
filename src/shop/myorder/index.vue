@@ -84,7 +84,7 @@
         </view>
       </view>
       <view class="no-order">
-        <image class="no-order-img" src="https://img.langcms.com/shop/img_scdd.png"></image>
+        <image class="no-order-img" :src="baseImgUrl + '/shop/img_scdd.png' "></image>
         <view class="no-order-text">啊哦,您还没有相关订单信息~</view>
       </view>
       
@@ -95,6 +95,7 @@
 <script>
 // 按需引入, 更小的应用体积
 import Taro from '@tarojs/taro'
+import { baseImgUrl } from '../../common/const';
 import { AtInput, AtForm } from 'taro-ui-vue'
 import tabview from '../../components/tabview'
 import './index.scss'
@@ -105,6 +106,7 @@ export default {
   components: { AtInput, tabview },
   data() {
     return {
+        baseImgUrl,
       value: '',
       tabCode: 0,
       tabList: [

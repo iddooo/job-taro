@@ -19,7 +19,7 @@
                <picker mode="region" @change="change" :value="[]">
                   <view class="font-sub">北京（默认当前地区）</view>
                 </picker>
-              <image class="arrow-icon" src="https://img.langcms.com/message/arrow.png"></image>
+              <image class="arrow-icon" :src="baseImgUrl + '/message/arrow.png' "></image>
           </view>
       </view>
 
@@ -29,7 +29,7 @@
               <picker mode="selector" :range="selector" @change="change">
                   <view class="font-sub">请选择</view>
                 </picker>
-              <image class="arrow-icon" src="https://img.langcms.com/message/arrow.png"></image>
+              <image class="arrow-icon" :src="baseImgUrl + '/message/arrow.png' "></image>
           </view>
       </view>
 
@@ -39,7 +39,7 @@
               <picker mode="selector" :range="selector" @change="change">
                   <view class="font-sub">不限</view>
                 </picker>
-              <image class="arrow-icon" src="https://img.langcms.com/message/arrow.png"></image>
+              <image class="arrow-icon" :src="baseImgUrl + '/message/arrow.png' "></image>
           </view>
       </view>
 
@@ -60,6 +60,7 @@
 <script>
 // 按需引入, 更小的应用体积
 import Taro from '@tarojs/taro'
+import { baseImgUrl } from '../../common/const';
 
 import "./index.scss";
 definePageConfig({
@@ -72,6 +73,7 @@ export default {
   data() {
     return {
         selector: ['不限', 'a', 'b', 'c'],
+        baseImgUrl,
     };
   },
   methods:{

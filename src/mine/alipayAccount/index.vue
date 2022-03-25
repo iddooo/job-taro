@@ -12,7 +12,7 @@
               <view class="form-ipt flex-ct">
                   <input type="text" v-model="name">
                   <view class="question" @tap="isShowTips=true">?</view>
-                  <!-- <image class="tips" src="https://img.langcms.com/index/" @tap="isShowTips=true"></image> -->
+                  <!-- <image class="tips" :src="baseImgUrl + '/index/" @tap="isShowTips=true' "></image> -->
               </view>
           </view>
 
@@ -35,6 +35,7 @@
 <script>
 import './index.scss' 
 import Taro from '@tarojs/taro'
+import { baseImgUrl } from '../../common/const';
 
 definePageConfig({
   navigationBarTitleText: '绑定支付宝'
@@ -46,6 +47,9 @@ export default {
   data () {
     return {
         isShowTips:false,
+        baseImgUrl,
+        account:undefined,
+        name:undefined
     }
   },
   methods: {

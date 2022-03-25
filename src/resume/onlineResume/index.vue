@@ -3,7 +3,7 @@
     <view class="ctr">
         <view class="font-38 mb16">张三</view>
         <view class="font-24 mb13">3年工作经验/27岁/本科</view>
-        <image class="avater" src="https://img.langcms.com/login/avater.png"></image>
+        <image class="avater" :src="baseImgUrl + '/login/avater.png' "></image>
 
         <view class="part part-b">
             <view class="font-32">求职期望</view>
@@ -44,7 +44,7 @@
 
     </view>
     <view class="info">
-        <image src="https://img.langcms.com/resume/xx@2x.png"></image>
+        <image :src="baseImgUrl + '/resume/xx@2x.png' "></image>
         <text>word、pdf等上传，请在电脑上操作</text>
     </view>
 
@@ -60,6 +60,7 @@
 <script>
 // 按需引入, 更小的应用体积
 import Taro from '@tarojs/taro'
+import { baseImgUrl } from '../../common/const';
 
 import "./index.scss";
 definePageConfig({
@@ -70,6 +71,7 @@ export default {
   },
   data() {
     return {
+            baseImgUrl
     };
   },
   methods:{

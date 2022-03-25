@@ -9,7 +9,7 @@
 
     <view class="detail" @tap="goSalaryDetails">
         全部工资明细
-        <image class="arrow-icon" src="https://img.langcms.com/message/arrow.png"></image>
+        <image class="arrow-icon" :src="baseImgUrl + '/message/arrow.png' "></image>
     </view>
   </view>
 </template>
@@ -17,6 +17,7 @@
 <script>
 import './index.scss'
 import Taro from '@tarojs/taro'
+import { baseImgUrl } from '../../common/const';
 
 definePageConfig({
   navigationBarTitleText: '账户余额'
@@ -25,7 +26,9 @@ definePageConfig({
 export default {
   components: {},
   data() {
-    return {}
+    return {
+        baseImgUrl
+    }
   },
   methods: {
     goAlipayAccount() {

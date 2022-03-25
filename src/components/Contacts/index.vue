@@ -8,7 +8,7 @@
         <view class="l-item flex-ct-btw">
           <view class="flex-ct">
             <image
-              src="https://img.langcms.com/index/sj@2x.png"
+              :src="baseImgUrl + '/index/sj@2x.png'"
               mode="aspectFit"
             ></image>
             电话：18823458854
@@ -32,7 +32,7 @@
         <view class="l-item flex-ct-btw">
           <view class="flex-ct">
             <image
-              src="https://img.langcms.com/index/zxgt@2x.png"
+              :src="baseImgUrl + '/index/zxgt@2x.png'"
               mode="aspectFit"
             ></image>
             在线沟通

@@ -1,7 +1,7 @@
 <template>
   <view class="index">
       <view class="card card-pd1">
-          <image class="img" src="https://img.langcms.com/mine/qd.png"></image>
+          <image class="img" :src="baseImgUrl + '/mine/qd.png' "></image>
           <view class="font">您今日未签到</view>
           <view class="count red">+10</view>
       </view>
@@ -12,7 +12,7 @@
                   <view class="font">+2
                     </view>
                     <view class="image">
-                        <image src="https://img.langcms.com/mine/jb@2x.png"></image>
+                        <image :src="baseImgUrl + '/mine/jb@2x.png' "></image>
                     </view>
               </view>
               <view class="font day">1天</view>
@@ -22,7 +22,7 @@
                   <view class="font">+2
                     </view>
                     <view class="image">
-                        <image src="https://img.langcms.com/mine/check-fill@2x.png"></image>
+                        <image :src="baseImgUrl + '/mine/check-fill@2x.png' "></image>
                     </view>
               </view>
               <view class="font day">2天</view>
@@ -32,7 +32,7 @@
                   <view class="font">+2
                     </view>
                     <view class="image">
-                        <image src="https://img.langcms.com/mine/jb@2x.png"></image>
+                        <image :src="baseImgUrl + '/mine/jb@2x.png' "></image>
                     </view>
               </view>
               <view class="font day">3天</view>
@@ -42,7 +42,7 @@
                   <view class="font">+2
                     </view>
                     <view class="image">
-                        <image src="https://img.langcms.com/mine/jb@2x.png"></image>
+                        <image :src="baseImgUrl + '/mine/jb@2x.png' "></image>
                     </view>
               </view>
               <view class="font day">4天</view>
@@ -52,7 +52,7 @@
                   <view class="font">+2
                     </view>
                     <view class="image">
-                        <image src="https://img.langcms.com/mine/jb@2x.png"></image>
+                        <image :src="baseImgUrl + '/mine/jb@2x.png' "></image>
                     </view>
               </view>
               <view class="font day">5天</view>
@@ -62,7 +62,7 @@
                   <view class="font">+2
                     </view>
                     <view class="image">
-                        <image src="https://img.langcms.com/mine/jb@2x.png"></image>
+                        <image :src="baseImgUrl + '/mine/jb@2x.png' "></image>
                     </view>
               </view>
               <view class="font day">6天</view>
@@ -72,7 +72,7 @@
                   <view class="font">+2
                     </view>
                     <view class="image">
-                        <image src="https://img.langcms.com/mine/jb@2x.png"></image>
+                        <image :src="baseImgUrl + '/mine/jb@2x.png' "></image>
                     </view>
               </view>
               <view class="font day">7天</view>
@@ -89,14 +89,14 @@ import './index.scss'
 definePageConfig({
   navigationBarTitleText: '签到'
 })
+import { baseImgUrl } from '../../common/const';
 
 export default {
     components: {
   },
   data () {
     return {
-      msg: 'Hello world!',
-      show: false
+      baseImgUrl
     }
   },
   methods: {

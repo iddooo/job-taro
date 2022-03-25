@@ -14,7 +14,7 @@
         <view class="content">
             <textarea class="text" name="" id="" cols="30" rows="10" placeholder-class="plchd" placeholder="请详细描述您的投诉内容，提供完整的证据链截图，便于我们为您快速处理（至少20字以上）"></textarea>
             <view class="image">
-                <image src=""></image>
+                <image src=" "></image>
             </view>
         </view>
 
@@ -29,7 +29,7 @@
         <view class="btn-box">
             <button class="button-primary btn">提交评价</button>
             <button class="button-grey" @tap="goMyFdbkList">
-                <image src="https://img.langcms.com/index/feed@2x.png"></image>我的申诉反馈
+                <image :src="baseImgUrl + '/index/feed@2x.png' "></image>我的申诉反馈
             </button>
         </view>
 
@@ -44,6 +44,7 @@
 <script>
 import './index.scss' 
 import Taro from '@tarojs/taro'
+import { baseImgUrl } from '../../common/const';
 
 definePageConfig({
   navigationBarTitleText: '投诉反馈'
@@ -52,6 +53,7 @@ definePageConfig({
 export default {
     data () {
         return {
+            baseImgUrl
             
         }
     },

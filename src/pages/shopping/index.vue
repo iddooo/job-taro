@@ -128,10 +128,10 @@ import './index.scss'
 definePageConfig({
   navigationBarTitleText: '牛犊梦商城',
   navigationBarBackgroundColor: '#00CC88',
-  navigationBarTextStyle: 'white' // 字体颜色
+  navigationBarTextStyle: 'white'// 字体颜色
 })
 Taro.setBackgroundColor({
-  backgroundColorTop: '#00CC88' // 顶部窗口的背景色为红
+  backgroundColorTop: '#00CC88'// 顶部窗口的背景色为红
 })
 
 export default {

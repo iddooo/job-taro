@@ -24,7 +24,7 @@
         <view class="form-label">
           <image
             class="form-label-icon"
-            src="https://img.langcms.com/login/lock.png"
+            :src="baseImgUrl + '/login/lock.png'"
           ></image>
         </view>
         <view class="form-ipt">
@@ -50,7 +50,7 @@
       <button openType="getPhoneNumber" @getPhoneNumber="getPhoneNumber">
         <image
           class="wechat-icon"
-          src="https://img.langcms.com/login/wechat.png"
+          :src="baseImgUrl + '/login/wechat.png'"
         ></image>
       </button>
     </view>
@@ -74,6 +74,8 @@ import Taro from "@tarojs/taro";
 import { post, setToken } from "../../api/index";
 import { isNew } from "../../common/const";
 import "./index.scss";
+import { baseImgUrl } from '../../common/const';
+
 definePageConfig({
   navigationBarTitleText: "登录"
 });
@@ -85,7 +87,8 @@ export default {
       tabActive: 1,
       phone: undefined,
       password: undefined,
-      agree: false
+      agree: false,
+      baseImgUrl
     };
   },
   created() {},

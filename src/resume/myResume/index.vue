@@ -4,7 +4,7 @@
           <view class="line" @tap="goOnlineResume">
             <view>在线简历</view>
             <view class="line-right orange">
-                待完善<image src="https://img.langcms.com/message/arrow.png"></image>
+                待完善<image :src="baseImgUrl + '/message/arrow.png' "></image>
             </view>
         </view>
       </view>
@@ -13,19 +13,19 @@
           <view class="line border-btm">
             <view>附件简历</view>
             <view class="line-right">
-                电脑上传<image src="https://img.langcms.com/message/arrow.png"></image>
+                电脑上传<image :src="baseImgUrl + '/message/arrow.png' "></image>
             </view>
         </view>
         <view class="list">
             <view class="list-left" @tap="show=true">
-                <image src="https://img.langcms.com/resume/bz@1x.png"></image>
+                <image :src="baseImgUrl + '/resume/bz@1x.png' "></image>
                 xx-岗位-2020简历.pdf
             </view>
             <view class="list-right">...</view>
         </view>
         <view class="list">
             <view class="list-left">
-                <image src="https://img.langcms.com/resume/bz@1x.png"></image>
+                <image :src="baseImgUrl + '/resume/bz@1x.png' "></image>
                 xx-岗位-2020简历.pdf
             </view>
             <view class="list-right">...</view>
@@ -36,7 +36,7 @@
           <view class="line">
             <view>选择默投简历</view>
             <view class="line-right">
-                在线简历/附件简历<image src="https://img.langcms.com/message/arrow.png"></image>
+                在线简历/附件简历<image :src="baseImgUrl + '/message/arrow.png' "></image>
             </view>
         </view>
       </view>
@@ -57,6 +57,7 @@
 <script>
 // 按需引入, 更小的应用体积
 import Taro from '@tarojs/taro'
+import { baseImgUrl } from '../../common/const';
 
 import "./index.scss";
 definePageConfig({
@@ -67,7 +68,8 @@ export default {
   },
   data() {
     return {
-        show:false
+        show:false,
+        baseImgUrl
     };
   },
   methods:{

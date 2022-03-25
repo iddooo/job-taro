@@ -7,14 +7,14 @@
             <view>160.00</view>
             <view class="flex-ct-end right">
                 2021-07-28 02:36
-                <image class="arrow-icon" src="https://img.langcms.com/message/arrow.png"></image>
+                <image class="arrow-icon" :src="baseImgUrl + '/message/arrow.png' "></image>
             </view>
         </view>
         <view class="cash-item flex-ct-btw">
             <view>160.00</view>
             <view class="flex-ct-end right">
                 2021-07-28 02:36
-                <image class="arrow-icon" src="https://img.langcms.com/message/arrow.png"></image>
+                <image class="arrow-icon" :src="baseImgUrl + '/message/arrow.png' "></image>
             </view>
         </view>
     </view>
@@ -25,6 +25,7 @@
 <script>
 import './index.scss'
 import Taro from '@tarojs/taro'
+import { baseImgUrl } from '../../common/const';
 
 definePageConfig({
   navigationBarTitleText: '账户余额'
@@ -33,7 +34,9 @@ definePageConfig({
 export default {
   components: {},
   data() {
-    return {}
+    return {
+        baseImgUrl
+    }
   },
   methods: {
     goAlipayAccount() {

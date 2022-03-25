@@ -13,13 +13,13 @@
             <view class="tag-item">女生</view>
         </view>
         <view class="distance flex-ct">
-            <image class="d-icon" src="https://img.langcms.com/index/dt@1x.png"></image>
+            <image class="d-icon" :src="baseImgUrl + '/index/dt@1x.png' "></image>
             <view class="outer">3.11km</view>&nbsp;|&nbsp;
             <view>海淀区</view>
         </view>
         <view class="company flex-ct-btw">
             <view class="flex-ct">
-                <image class="c-icon" src="https://img.langcms.com/index/dt@1x.png"></image>
+                <image class="c-icon" :src="baseImgUrl + '/index/dt@1x.png' "></image>
                 <view>北京有限公司</view>
             </view>
             <view class="r-btn">投递简历</view>
@@ -31,10 +31,12 @@
 // 按需引入, 更小的应用体积
 import './index.scss' 
 import Taro from '@tarojs/taro'
+import { baseImgUrl } from '../../common/const';
 
 export default {
     data () {
         return {
+            baseImgUrl
         }
     },
     methods: {
