@@ -6,7 +6,7 @@
                 <image src="https://img.langcms.com/mine/"></image>
             </view>
             <view class="user-name" @tap="navigateTo('/login/signIn/index')">登录开启赚钱旅程</view>
-            <view class="sign" @tap="goSign">
+            <view class="sign" @tap="navigateTo('/login/sign/index')">
                 <view class="link flex-ct-ct"><image src="https://img.langcms.com/mine/jb@2x.png"></image>来签到</view>
                 <image src="https://img.langcms.com/mine/Coins_Two Color@1x.png"></image>
             </view>
@@ -29,7 +29,7 @@
                 </view>
             </view>
             <view class="line"></view>
-            <view class="c-item">
+            <view class="c-item" @tap="swichTab('/pages/shopping/index')">
                 <view class="score">0.00 元</view>
                 <view class="name flex-ct">
                     <view>立即兑换</view>
@@ -136,6 +136,11 @@ export default {
             url: url
         })
       },
+      swichTab(url){
+          Taro.switchTab({
+              url
+          })
+      }
   },
     }
 </script>

@@ -10,7 +10,7 @@
               <image class="search-icon" src="https://img.langcms.com/index/ss@1x.png"></image>
               <input class="ipt" type="text" placeholder-class="plchd" placeholder="职务" />
           </view>
-          <image class="sign-box" src="https://img.langcms.com/index/sign@1x.png"></image>
+          <image @tap="navigateTo('/login/sign/index')" class="sign-box" src="https://img.langcms.com/index/sign@1x.png"></image>
       </view>
 
     <!-- 轮播图 -->
@@ -28,20 +28,13 @@
     <!-- 筛选 -->
     <view class="filter-box">
         <view class="flex-ct">
-            <view class="r-item active">
-                <view>推荐</view>
-                <image class="active-icon" src="https://img.langcms.com/index/xz@1x.png"></image>
-            </view>
-            <view class="r-item">
-                <view>在家做</view>
-            </view>
-            <view class="r-item">
-                <view>在本地</view>
-            </view>
-            <view class="r-item">
-                <view>大牌名企</view>
+            <view :class="['r-item',{'active':type==item.type}]"
+                v-for="item in types" :key="item.type"
+                @tap="type=item.type">
+                <view>{{item.name}}</view>
             </view>
         </view>
+
         <view class="default">
             <view class="d-left">
                 <view class="d-item active">默认</view>
@@ -176,21 +169,37 @@
 // 按需引入, 更小的应用体积
 import './index.scss' 
 import JobCard from '../../components/JobCard/index.vue'
+import tabview from '../../components/tabview'
 
 export default {
     components: {
-        JobCard
+        JobCard,
+        tabview
   },
   data () {
     return {
         isShowPost:false, //岗位
         isShowFilters:false, //筛选
+
+        type:1,
+        types:[
+            {name:'推荐',type:1},
+            {name:'在家做',type:2},
+            {name:'在本地',type:3},
+            {name:'大牌名企',type:4}
+        ]
     }
   },
   methods: {
     handleClick () {
       e.stopPropagation() // 阻止冒泡
     },
+    navigateTo(url) {
+        Taro.navigateTo({
+            url: url
+        })
+    },
+
     
   },
     }

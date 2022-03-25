@@ -4,13 +4,13 @@
           <view class="form-item flex-ct">
               <view class="form-label">支付宝账户</view>
               <view class="form-ipt">
-                  <input type="text">
+                  <input type="text" v-model="account">
               </view>
           </view>
           <view class="form-item flex-ct">
               <view class="form-label">真实姓名</view>
               <view class="form-ipt flex-ct">
-                  <input type="text">
+                  <input type="text" v-model="name">
                   <view class="question" @tap="isShowTips=true">?</view>
                   <!-- <image class="tips" src="https://img.langcms.com/index/" @tap="isShowTips=true"></image> -->
               </view>
@@ -18,7 +18,7 @@
 
       </view>
 
-    <button class="button disabled btn">确认</button>
+    <button :class="['button', 'btn', {'disabled':!account || !name}] ">确认</button>
 
     <view v-show="isShowTips">
         <view class="model"></view>

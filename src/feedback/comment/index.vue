@@ -12,7 +12,7 @@
         </view>
 
         <view class="stars">
-            <image class="star-icon" src="https://img.langcms.com//index/star@2x.png"></image>
+            <image class="star-icon" src="https://img.langcms.com/index/star@2x.png"></image>
             <image class="star-icon" src="https://img.langcms.com/index/star@2x.png"></image>
             <image class="star-icon" src="https://img.langcms.com/index/star@2x.png"></image>
             <image class="star-icon" src="https://img.langcms.com/index/star@2x.png"></image>

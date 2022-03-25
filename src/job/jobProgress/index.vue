@@ -1,6 +1,6 @@
 <template>
   <view class="index">
-      <view class="job-info">
+      <view class="job-info" @tap="navigateTo('/job/jobDetail/index')">
           <view class="job-title">招聘书法老师</view>
           <view class="job-des">30元/小时</view>
           <view class="job-company">
@@ -8,7 +8,7 @@
                   <image src="https://img.langcms.com/index/qy@2x.png"></image>
               </view>
               <view class="job-c-name">教育有限公司  B轮  150-500人</view>
-              <view class="feedback">
+              <view class="feedback" @tap="navigateTo('/feedback/complaint/index')">
                   <image src="https://img.langcms.com/index/tsfk@2x.png"></image>
                   <text>投诉反馈</text>
               </view>
@@ -20,36 +20,36 @@
 
       <view class="ctr-progress">
           <view class="status">待录取</view>
-          <view class="tips">主动联系商家，录取概率更高哦，
+          <view class="tips" >主动联系商家，录取概率更高哦，
               <view class="call">点我联系商家 > </view>
           </view>
 
           <view class="progress">
               <view class="progress-item">
                   <view class="progress-item-icon">
-                      <image src="https://img.langcms.com/index/status/bm@2x.png"></image>
-                      <!-- <image src="https://img.langcms.com/index/status/bm-on@2x.png"></image> -->
+                      <image v-if="state==1" src="https://img.langcms.com/index/status/bm-on@2x.png"></image>
+                      <image v-else src="https://img.langcms.com/index/status/bm@2x.png"></image>
                   </view>
                   <view class="progress-item-name">报名</view>
               </view>
               <view class="progress-item">
                   <view class="progress-item-icon">
-                      <image src="https://img.langcms.com/index/status/lq@2x.png"></image>
-                      <!-- <image src="https://img.langcms.com/index/status/lq-on@2x.png"></image> -->
+                      <image v-if="state==2" src="https://img.langcms.com/index/status/lq-on@2x.png"></image>
+                      <image v-else src="https://img.langcms.com/index/status/lq@2x.png"></image>
                   </view>
                   <view class="progress-item-name">录取</view>
               </view>
               <view class="progress-item">
                   <view class="progress-item-icon">
-                      <image src="https://img.langcms.com/index/status/fk@2x.png"></image>
-                      <!-- <image src="https://img.langcms.com/index/status/fk-on@2x.png"></image> -->
+                      <image v-if="state==3" src="https://img.langcms.com/index/status/fk-on@2x.png"></image>
+                      <image v-else src="https://img.langcms.com/index/status/fk@2x.png"></image>
                   </view>
                   <view class="progress-item-name">反馈</view>
               </view>
               <view class="progress-item active">
                   <view class="progress-item-icon">
-                      <!-- <image src="https://img.langcms.com/index/status/fx@2x.png"></image> -->
-                      <image src="https://img.langcms.com/index/status/fx-on@2x.png"></image>
+                      <image v-if="state==4" src="https://img.langcms.com/index/status/fx-on@2x.png"></image>
+                      <image v-else src="https://img.langcms.com/index/status/fx@2x.png"></image>
                   </view>
                   <view class="progress-item-name">发薪</view>
               </view>
@@ -74,6 +74,11 @@
           </view>
       </view>
 
+      <view class="state-tips">
+          <image src="https://img.langcms.com/resume/xx@2x.png"></image>
+          <text>任务完成，需按要求提交多张照片及描述。</text>
+      </view>
+
         <!--  报名 -->
         <!-- <view class="btns">
             <view class="btn-column">
@@ -88,7 +93,7 @@
 
         <!-- 录取/反馈 -->
         <!-- <view class="btns">
-            <view class="button-grey w298" @tap="goFeedback">
+            <view class="button-grey w298" @tap="navigateTo('/feedback/feedback/index')">
                 <image src="https://img.langcms.com/index/rwfk@2x.png"></image>
                 <view>任务反馈</view>
             </view>
@@ -99,11 +104,11 @@
 
         <!-- 发薪 -->
         <view class="btns">
-            <view class="button-grey w189" @tap="goCommnet">
+            <view class="button-grey w189" @tap="navigateTo('/feedback/comment/index')">
                 <image src="https://img.langcms.com/index/cmt@2x.png"></image>
                 <view>评价</view>
             </view>
-            <view class="button-grey w189" @tap="goComplaint">
+            <view class="button-grey w189" @tap="navigateTo('/feedback/complaint/index')">
                 <image src="https://img.langcms.com/index/feed@2x.png"></image>
                 <view>申诉</view>
             </view>
@@ -140,23 +145,14 @@ export default {
     data () {
         return {
             isShowResume:false,
-            isShowContact:false
+            isShowContact:false,
+            state:1, //1 报名 2 录取 3 反馈 4 发薪
         }
     },
     methods: {
-        goFeedback(){
+        navigateTo(url) {
             Taro.navigateTo({
-                url: '/feedback/feedback/index'
-            })
-        },
-        goCommnet(){
-            Taro.navigateTo({
-                url: '/feedback/comment/index'
-            })
-        },
-        goComplaint(){
-            Taro.navigateTo({
-                url: '/feedback/complaint/index'
+                url: url
             })
         }
     },

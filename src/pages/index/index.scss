@@ -54,7 +54,7 @@
     height: 244px;
     transform: translateY(0);
     background: #fff;
-    padding: 24px ;
+    padding: 15px 24px ;
     .swiper,.banner-img{
         border-radius: 18px;
         overflow: hidden;
@@ -65,7 +65,7 @@
 }
 // 筛选
 .filter-box{
-    padding: 20px 32px;
+    padding: 0 32px;
     background-color: #fff;
     .r-item{
         margin-right: 68px;
@@ -73,10 +73,14 @@
         font-family: PingFangSC-Medium, PingFang SC;
         font-weight: 500;
         color: #111E38;
-        line-height: 50px;
+        line-height: 90px;
         position: relative;
         &.active{
             font-size: 36px;
+            background-image:url('#{$baseImgUrl}/index/xz@1x.png');
+            background-size: 50px 15px;
+            background-position: bottom center;
+            background-repeat: no-repeat;
         }
         .active-icon{
             position: absolute;
@@ -89,7 +93,8 @@
         }
     }
     .default{
-        margin-top: 37px;
+        padding-top: 20px;
+        padding-bottom: 25px;
         @include flex(space-between);
         .d-left,.d-right{
             @include flex(flex-start);

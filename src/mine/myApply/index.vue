@@ -1,11 +1,5 @@
 <template>
   <view class="index">
-      <!-- <view class="tabs flex-ct-btw">
-          <view class="tab-item active">全部</view>
-          <view class="tab-item">已报名</view>
-          <view class="tab-item">待支付</view>
-          <view class="tab-item">已完成</view>
-      </view> -->
     <tabview color="green" :tabCode="tabCode" :tabList="tabList" @changeTabCode="changeTabCode" />
 
 
