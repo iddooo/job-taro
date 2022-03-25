@@ -2,7 +2,7 @@
   <view class="index">
       <view class="head">
           <view class="avater">
-              <image :src="baseImgUrl + '/login/avater.png' "></image>
+              <image :src="baseImgUrl + '/resume/avater@1x.png' "></image>
           </view>
           <view class="green">更换头像</view>
       </view>

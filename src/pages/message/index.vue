@@ -9,7 +9,7 @@
     <view class="msg-list">
         <view class="msg-box">
             <view class="avater">
-                <image class="notice-icon" :src="baseImgUrl + '/message/' "></image>
+                <image class="notice-icon" :src="baseImgUrl + '/resume/avater@1x.png' "></image>
                 <view class="badge flex-ct-ct">1</view>
             </view>
             <view class="des">
@@ -26,7 +26,7 @@
         </view>
         <view class="msg-box">
             <view class="avater">
-                <image class="notice-icon" :src="baseImgUrl + '/message/' "></image>
+                <image class="notice-icon" :src="baseImgUrl + '/resume/avater@1x.png' "></image>
                 <view class="badge flex-ct-ct">1</view>
             </view>
             <view class="des">

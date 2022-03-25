@@ -3,7 +3,7 @@
     <view class="ctr">
         <view class="font-38 mb16">张三</view>
         <view class="font-24 mb13">3年工作经验/27岁/本科</view>
-        <image class="avater" :src="baseImgUrl + '/login/avater.png' "></image>
+        <image class="avater" :src="baseImgUrl + '/resume/avater@1x.png' "></image>
 
         <view class="part part-b">
             <view class="font-32">求职期望</view>

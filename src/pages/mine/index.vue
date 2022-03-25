@@ -39,7 +39,7 @@
         </view>
     </view>
 
-    <view class="profile" @tap="navigateTo('/login/signIn/index')">
+    <view class="profile" @tap="navigateTo('/resume/userInfo/index')">
         <image :src="baseImgUrl + '/mine/wsjl@1x.png' "></image>
         <view class="percent flex-ct">完善度 <view class="green">72%</view>,完善简历可提高录取率~</view>
         <view class="resume-btn flex-ct-ct">去完善</view>
