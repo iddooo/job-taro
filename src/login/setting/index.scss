@@ -1,0 +1,41 @@
+.index{
+    padding: 32px;
+    background: #f5f6fa;
+    box-sizing: border-box;
+    height: 100vh;
+}
+.menu {
+    margin: 0 auto;
+    width: 686px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 6px 32px 6px 40px;
+    border-radius: 14px;
+    .menu-item {
+      padding: 37px 0;
+      .menu-icon {
+        width: 36px;
+        height: 36px;
+        margin-right: 34px;
+      }
+      .menu-name {
+        font-size: 32px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: #1d1d55;
+        line-height: 45px;
+      }
+    }
+    .count {
+      font-size: 30px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #8f95a1;
+      line-height: 42px;
+      margin-right: 24px;
+    }
+    .menu-arrow {
+      width: 15px;
+      height: 25px;
+    }
+  }

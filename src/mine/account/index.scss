@@ -46,15 +46,18 @@
 }
 
 .detail {
+  position: absolute;
+  top: 80vh;
+  width: 100%;
+  left: 0;
   font-size: 30px;
   font-family: PingFangSC-Regular, PingFang SC;
   font-weight: 400;
   color: #101e37;
   line-height: 42px;
   padding: 20px;
-  margin-top: 480px;
   @include flex();
-  .arrow-icon{
+  .arrow-icon {
     width: 15px;
     height: 25px;
     margin-left: 14px;

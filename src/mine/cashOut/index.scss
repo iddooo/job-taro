@@ -1,0 +1,40 @@
+.index {
+  background: #f5f6fa;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.cash-out-title {
+  font-size: 38px;
+  font-family: Source Han Sans CN-Regular, Source Han Sans CN;
+  font-weight: 400;
+  color: #00cc88;
+  line-height: 45px;
+  text-align: center;
+  padding: 32px 0;
+}
+.cash-list {
+  background-color: #fff;
+  padding: 0 32px;
+  .cash-item {
+    height: 88px;
+    font-size: 30px;
+    font-family: Source Han Sans CN-Heavy, Source Han Sans CN;
+    font-weight: 800;
+    color: #414141;
+    border-bottom: 1px solid #f1f1f1;
+    &:last-of-type {
+      border-bottom: 0;
+    }
+    .right {
+      font-size: 24px;
+      font-family: Source Han Sans CN-Regular, Source Han Sans CN;
+      font-weight: 400;
+      color: #9c9c9c;
+      .arrow-icon {
+        margin-left: 16px;
+        width: 9px;
+        height: 14px;
+      }
+    }
+  }
+}

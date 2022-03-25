@@ -1,0 +1,75 @@
+.index {
+  background: #f5f6fa;
+  padding: 24px 24px 128px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.card-green {
+  height: 153px;
+  background: #00cc88;
+  border-radius: 28px 28px 28px 28px;
+  box-sizing: border-box;
+  padding: 30px 42px;
+  font-size: 32px;
+  font-family: Source Han Sans CN-Regular, Source Han Sans CN;
+  font-weight: 400;
+  color: #ffffff;
+  .card-left {
+    width: 200px;
+  }
+  margin-bottom: 24px;
+}
+
+.card-info {
+  background-color: #fff;
+  padding: 0 32px;
+  border-radius: 28px 28px 28px 28px;
+  .card-info-title {
+    padding-top: 19px;
+    padding-bottom: 7px;
+    font-size: 32px;
+    font-family: Source Han Sans CN-Regular, Source Han Sans CN;
+    font-weight: 400;
+    color: #00cc88;
+    line-height: 45px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      width: 123px;
+      left: 0;
+      height: 7px;
+      background: #00cc88;
+    }
+  }
+  .card-info-item {
+    font-size: 30px;
+    font-family: Source Han Sans CN-Regular, Source Han Sans CN;
+    font-weight: 400;
+    color: #101d37;
+    height: 76px;
+    border-bottom: 2px solid #e8e9eb;
+    &:last-of-type {
+      border-bottom: 0;
+    }
+    .arrow-icon {
+      width: 10px;
+      height: 18px;
+      margin-right: 5px;
+    }
+  }
+}
+
+.btn {
+  width: 750px;
+  height: 128px;
+  background: #ffffff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  button{
+    width: 698px;
+  }
+}

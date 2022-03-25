@@ -5,7 +5,7 @@
             <view class="avater">
                 <image src="https://img.langcms.com/mine/"></image>
             </view>
-            <view class="user-name" @tap="goLogin">登录开启赚钱旅程</view>
+            <view class="user-name" @tap="navigateTo('/login/signIn/index')">登录开启赚钱旅程</view>
             <view class="sign" @tap="goSign">
                 <view class="link flex-ct-ct"><image src="https://img.langcms.com/mine/jb@2x.png"></image>来签到</view>
                 <image src="https://img.langcms.com/mine/Coins_Two Color@1x.png"></image>
@@ -13,7 +13,7 @@
         </view>
         
         <view class="count flex-ct-btw">
-            <view class="c-item" @tap="goAccount">
+            <view class="c-item" @tap="navigateTo('/mine/account/index')">
                 <view class="score">0.00 元</view>
                 <view class="name flex-ct">
                     <view>账户余额</view>
@@ -21,7 +21,7 @@
                 </view>
             </view>
             <view class="line"></view>
-            <view class="c-item">
+            <view class="c-item" @tap="navigateTo('/mine/coin/index')">
                 <view class="score">0.00 元</view>
                 <view class="name flex-ct">
                     <view>平台币提现</view>
@@ -39,13 +39,13 @@
         </view>
     </view>
 
-    <view class="profile" @tap="goResume">
+    <view class="profile" @tap="navigateTo('/login/signIn/index')">
         <image src="https://img.langcms.com/mine/wsjl@1x.png"></image>
         <view class="percent flex-ct">完善度 <view class="green">72%</view>,完善简历可提高录取率~</view>
         <view class="resume-btn flex-ct-ct">去完善</view>
     </view>
 
-    <view class="my-apply flex-ct"  @tap="goMyApply">
+    <view class="my-apply flex-ct"  @tap="navigateTo('/mine/myApply/index')">
         <view class="apply-status">
             <view class="count">0</view>
             <view class="status">全部</view>
@@ -65,7 +65,7 @@
     </view>
 
     <view class="menu">
-        <view class="menu-item flex-ct-btw" @tap="goCollections">
+        <view class="menu-item flex-ct-btw" @tap="navigateTo('/mine/collections/index')">
             <view class="flex-ct">
                 <view class="menu-icon">
                     <image src="https://img.langcms.com/mine/shoucang.png"></image>
@@ -77,7 +77,7 @@
                 <image class="menu-arrow" src="https://img.langcms.com/mine/Rectangle @1x.png"></image>
             </view>
         </view>
-        <view class="menu-item flex-ct-btw">
+        <view class="menu-item flex-ct-btw" >
             <view class="flex-ct">
                 <view class="menu-icon">
                     <image src="https://img.langcms.com/mine/zhaopingangwei.png"></image>
@@ -88,7 +88,7 @@
                 <image class="menu-arrow" src="https://img.langcms.com/mine/Rectangle @1x.png"></image>
             </view>
         </view>
-        <view class="menu-item flex-ct-btw">
+        <view class="menu-item flex-ct-btw" @tap="navigateTo('/mine/serviceCenter/index')">
             <view class="flex-ct">
                 <view class="menu-icon">
                     <image src="https://img.langcms.com/mine/fuwu.png"></image>
@@ -99,7 +99,7 @@
                 <image class="menu-arrow" src="https://img.langcms.com/mine/Rectangle @1x.png"></image>
             </view>
         </view>
-        <view class="menu-item flex-ct-btw">
+        <view class="menu-item flex-ct-btw" @tap="navigateTo('/login/setting/index')">
             <view class="flex-ct">
                 <view class="menu-icon">
                     <image src="https://img.langcms.com/mine/shezhi.png"></image>
@@ -131,36 +131,11 @@ export default {
     }
   },
   methods: {
-      goSign(){
+      navigateTo(url) {
         Taro.navigateTo({
-            url: '/mine/sign/index'
+            url: url
         })
       },
-      goLogin(){
-        Taro.navigateTo({
-            url: '/login/signIn/index'
-        })
-      },
-      goAccount(){
-        Taro.navigateTo({
-            url: '/mine/account/index'
-        })
-      },
-      goMyApply(){
-        Taro.navigateTo({
-            url: '/mine/myApply/index'
-        })
-      },
-      goCollections(){
-          Taro.navigateTo({
-            url: '/mine/collections/index'
-        })
-      },
-      goResume(){
-          Taro.navigateTo({
-            url: '/resume/userInfo/index'
-        })
-      }
   },
     }
 </script>

@@ -1,0 +1,55 @@
+.index {
+  background: #f5f6fa;
+  padding: 24px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.coin-title {
+  font-size: 32px;
+  font-family: Source Han Sans CN-Regular, Source Han Sans CN;
+  font-weight: 400;
+  color: #00cc88;
+  line-height: 45px;
+  margin-bottom: 16px;
+}
+
+.coin-withdraw {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px 32px 9px;
+  .input-box {
+    font-size: 40px;
+    font-family: Source Han Sans CN-Regular, Source Han Sans CN;
+    font-weight: 400;
+    color: #1d1d55;
+    line-height: 45px;
+    margin-bottom: 30px;
+    input {
+      padding-left: 30px;
+    }
+  }
+}
+
+.coin-tips {
+  font-size: 24px;
+  color: #878d99;
+}
+
+.detail {
+  position: absolute;
+  top: 80vh;
+  left: 0;
+  width: 100%;
+  font-size: 30px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #101e37;
+  line-height: 42px;
+  padding: 20px;
+  .arrow-icon {
+    width: 15px;
+    height: 25px;
+    margin-left: 14px;
+    // background-color: #eee;
+  }
+}

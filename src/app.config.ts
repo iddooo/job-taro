@@ -8,7 +8,7 @@ export default {
   subPackages: [
     {
       root: "login",
-      pages: ["signIn/index", "prefer/index", "profile/index","agreement/index"],
+      pages: ["signIn/index", "prefer/index", "profile/index","agreement/index","setting/index"],
     },
     {
       root: "job",
@@ -22,7 +22,10 @@ export default {
         "alipayAccount/index",
         "myApply/index",
         "collections/index",
-        "salaryDetails/index"
+        "salaryDetails/index",
+        "serviceCenter/index",
+        "coin/index",
+        "cashOut/index"
       ],
     },
     {
