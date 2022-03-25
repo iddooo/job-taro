@@ -1,7 +1,7 @@
 @import "../../app.scss";
 .index {
   background: #f5f6fa;
-  height: 100vh;
+  min-height: 100vh;
 }
 // 导航栏
 .nav-box {
@@ -149,15 +149,23 @@
     padding: 16px 16px 0 16px;
     box-sizing: border-box;
     width: 100%;
-    height: 100%;
-    overflow: scroll;
-  }
-  .job-card {
-    .company {
-      .r-btn {
-        border-radius: 17px 0px 0px 17px;
-        border: 0;
-        margin-right: -24px;
+    left: 0;
+    bottom: 0;
+    top: 578px;
+    .job-content {
+      padding: 16px 16px 0 16px;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      overflow: scroll;
+    }
+    .job-card {
+      .company {
+        .r-btn {
+          border-radius: 17px 0px 0px 17px;
+          border: 0;
+          margin-right: -24px;
+        }
       }
     }
   }

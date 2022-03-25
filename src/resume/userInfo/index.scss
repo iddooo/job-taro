@@ -2,7 +2,7 @@
 
 .index {
   background: #f5f6fa;
-  padding-bottom: 137px;
+  padding-bottom: 153px; //137+16
   min-height: 100vh;
   box-sizing: border-box;
 }
@@ -88,12 +88,13 @@
   position: fixed;
   left: 0;
   bottom: 0;
-  height: 137px;
+  height: 143px;
   background: #ffffff;
   width: 100%;
   @include flex(space-between);
   box-sizing: border-box;
   padding: 0 32px;
+  border-top: 16px solid #f5f6fa;
   .btn {
     width: 330px;
   }

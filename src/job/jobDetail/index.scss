@@ -2,8 +2,7 @@
 
 .index {
   background: #f5f6fa;
-  padding: 24px;
-  padding-bottom: 128px;
+  padding: 24px 24px 144px;
   position: relative;
 }
 .font-h1 {
@@ -173,10 +172,11 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 128px;
+  height:144px;
   background: #ffffff;
   padding: 0 24px;
   box-sizing: border-box;
+  border-top: 16px solid #f5f6fa;
   .btn1 {
     font-size: 20px;
     font-family: PingFangSC-Medium, PingFang SC;

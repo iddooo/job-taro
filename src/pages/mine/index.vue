@@ -2,11 +2,13 @@
   <view class="index">
     <view class="head">
         <view class="user-info flex-ct-btw">
-            <view class="avater">
-                <image :src="baseImgUrl + '/resume/avater@1x.png' "></image>
+            <view @tap="navigateTo('/login/signIn/index')" class="flex-ct">
+                <view class="avater">
+                    <image :src="baseImgUrl + '/resume/avater@1x.png' "></image>
+                </view>
+                <view class="user-name">登录开启赚钱旅程</view>
             </view>
-            <view class="user-name" @tap="navigateTo('/login/signIn/index')">登录开启赚钱旅程</view>
-            <view class="sign" @tap="navigateTo('/login/sign/index')">
+            <view class="sign" @tap="navigateTo('/mine/sign/index')">
                 <view class="link flex-ct-ct"><image :src="baseImgUrl + '/mine/jb@2x.png' "></image>来签到</view>
                 <image :src="baseImgUrl + '/mine/Coins_Two Color@1x.png' "></image>
             </view>

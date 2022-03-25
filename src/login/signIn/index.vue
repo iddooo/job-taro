@@ -39,7 +39,7 @@
 
       <button
         :class="['button', 'btn', { disabled: !phone || !password }]"
-        @tap="goPrefer"
+        @tap="navigateTo('/login/prefer/index')"
       >
         登录
       </button>
@@ -98,11 +98,6 @@ export default {
         url: url
       });
     },
-    goPrefer() {
-      Taro.navigateTo({
-        url: "/login/prefer/index"
-      });
-    },
     async getPhoneNumber(res) {
       if (res) {
         const mobile = JSON.stringify(Taro.getSystemInfoSync());
@@ -127,6 +122,8 @@ export default {
           url: "api/wechat/userinfo.html",
           data: { encryptedData, iv }
         });
+
+        this.navigateTo('/login/prefer/index')
       }
     }
   }
