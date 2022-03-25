@@ -60,7 +60,6 @@ export default {
           "education/index",
           "experience/index",
           "description/index",
-          "resumeList/index",
           "onlineResume/index",
           "myResume/index",
         ],

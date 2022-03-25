@@ -1,7 +1,7 @@
 @import '../../app.scss';
 .index{
   background: #f5f6fa;
-  height: 100vh;
+  min-height: 100vh;
 
 }
 // 导航栏
@@ -144,7 +144,7 @@
     width: 100%;
     left: 0;
     bottom: 0;
-    top: 588px; 
+    top: 578px; 
     .job-content{
         padding:16px 16px 0 16px;
         box-sizing: border-box;
