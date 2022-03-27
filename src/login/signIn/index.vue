@@ -71,7 +71,7 @@
 <script>
 // 按需引入, 更小的应用体积
 import Taro from "@tarojs/taro";
-import { post, setToken } from "../../api/index";
+import { post, setToken, getToken } from "../../api/index";
 import { isNew } from "../../common/const";
 import "./index.scss";
 import { baseImgUrl } from '../../common/const';
@@ -91,7 +91,12 @@ export default {
       baseImgUrl
     };
   },
-  created() {},
+  created() {
+    
+    if (getToken()) {
+      this.navigateTo('/pages/index/index')
+    }
+  },
   methods: {
     navigateTo(url) {
       Taro.navigateTo({
@@ -126,12 +131,16 @@ export default {
           url: "api/wechat/mobile.html",
           data: { encryptedData, iv, jscode: phoneNumberCode }
         });
-        const userInfo = await post({
+        const userId= await post({
           url: "api/wechat/userinfo.html",
           data: { encryptedData, iv }
         });
-
-        this.navigateTo('/login/prefer/index')
+        const userInfo = await post({
+          url: "api/user/index.html",
+          data:{}
+        });
+        console.log(userInfo)
+        
       }
     }
   }

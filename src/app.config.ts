@@ -8,7 +8,13 @@ export default {
   subPackages: [
     {
       root: "login",
-      pages: ["signIn/index", "prefer/index", "profile/index","agreement/index","setting/index"],
+      pages: [
+        "signIn/index",
+        "prefer/index",
+        "profile/index",
+        "agreement/index",
+        "setting/index",
+      ],
     },
     {
       root: "job",
@@ -25,22 +31,22 @@ export default {
         "salaryDetails/index",
         "serviceCenter/index",
         "coin/index",
-        "cashOut/index"
+        "cashOut/index",
       ],
     },
     {
       root: "message",
-      pages: ["notice/index","noticeDetail/index"],
+      pages: ["notice/index", "noticeDetail/index"],
     },
     {
       root: "feedback",
       pages: [
-          "feedback/index", 
-          "complaint/index", 
-          "comment/index",
-          "myFdbkList/index",
-          "commentResult/index"
-        ],
+        "feedback/index",
+        "complaint/index",
+        "comment/index",
+        "myFdbkList/index",
+        "commentResult/index",
+      ],
     },
     {
       root: "shop",
@@ -54,16 +60,20 @@ export default {
       ],
     },
     {
-        root: "resume",
-        pages: [
-          "userInfo/index",
-          "education/index",
-          "experience/index",
-          "description/index",
-          "onlineResume/index",
-          "myResume/index",
-        ],
-      },
+      root: "resume",
+      pages: [
+        "userInfo/index",
+        "education/index",
+        "experience/index",
+        "description/index",
+        "onlineResume/index",
+        "myResume/index",
+      ],
+    },
+    {
+      root: "location",
+      pages: ["location/index", "addlocation/index"],
+    },
   ],
   window: {
     backgroundTextStyle: "light",

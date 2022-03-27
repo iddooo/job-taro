@@ -8,6 +8,9 @@ export function setToken(newToken: string): void {
   token = newToken;
   Taro.setStorageSync("token", token);
 }
+export function getToken() {
+  return token || Taro.getStorageSync("token");
+}
 function getSign(data: Object): any {
   const dataJson = JSON.stringify(data);
   // @ts-ignore
@@ -22,18 +25,22 @@ export function post({
 }): Promise<ResponseType> {
   return new Promise((reslove, reject) => {
     const brandInfo = Taro.getStorageSync("brandInfo");
-    const { appid, brandId } = brandInfo;
+    const { appId, brandId } = brandInfo;
+    const header = {
+      "Content-Type": "application/json",
+      "X-BrandId": brandId,
+      "X-AppId": appId,
+      "X-Platform": env,
+      "X-Token": token,
+      "X-Sign": getSign(data),
+    };
+    if (url === "api/wechat/token.html") {
+      delete header["X-Token"];
+    }
     Taro.request({
       url: baseUrl + url,
       method: "POST",
-      header: {
-        "Content-Type": "application/json",
-        "X-BrandId": brandId,
-        "X-AppId": appid,
-        "X-Platform": env,
-        "X-Token": token,
-        "X-Sign": getSign(data),
-      },
+      header,
       timeout,
       data,
       success: (res) => {
