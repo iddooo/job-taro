@@ -63,7 +63,7 @@
       <text class="underline" @tap="navigateTo('/login/agreement/index')"
         >牛犊梦用户协议、隐私协议</text
       >
-      <view>｜ 我不同意</view>
+      <view @tap="agree = false">｜ 我不同意</view>
     </view>
   </view>
 </template>
@@ -99,6 +99,14 @@ export default {
       });
     },
     async getPhoneNumber(res) {
+      if (!this.agree) {
+        wx.showToast({
+          title: '请先同意用户条款',
+          icon: 'error',
+          duration: 2000
+        })
+        return
+      }
       if (res) {
         const mobile = JSON.stringify(Taro.getSystemInfoSync());
         const { encryptedData, iv, code } = res.detail;
