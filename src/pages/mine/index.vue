@@ -1,5 +1,6 @@
 <template>
   <view class="index">
+      <view class="container">
     <view class="head">
         <view class="user-info flex-ct-btw">
             <view @tap="navigateTo('/login/signIn/index')" class="flex-ct">
@@ -112,6 +113,7 @@
                 <image class="menu-arrow" :src="baseImgUrl + '/mine/Rectangle @1x.png' "></image>
             </view>
         </view>
+    </view>
     </view>
   </view>
 </template>
