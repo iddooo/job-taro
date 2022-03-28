@@ -1,148 +1,156 @@
-@import '../../app.scss';
-.index{
+@import "../../app.scss";
+.index {
   background: #f5f6fa;
   min-height: 100vh;
-
 }
 // 导航栏
-.nav-box{
-    padding: 20px 30px;
+.nav-box {
+  padding: 20px 30px;
+  @include flex(flex-start);
+  background-color: #fff;
+  .loc-box {
     @include flex(flex-start);
-    background-color: #fff;
-    .loc-box{
-        @include flex(flex-start);
-        font-size: 32px;
-        font-family: PingFangSC-Medium, PingFang SC;
-        font-weight: 500;
-        color: #101D37;
-        line-height: 45px;
-        .loc-icon{
-            width: 24px;
-            height: 28px;
-            // background: #101D37;
-            margin-right: 12px;
-        }
+    font-size: 32px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #101d37;
+    line-height: 45px;
+    .loc-icon {
+      width: 24px;
+      height: 28px;
+      // background: #101D37;
+      margin-right: 12px;
     }
-    .ipt-box{
-        @include flex(flex-start);
-        width: 454px;
-        height: 72px;
-        background: #F4F4F7;
-        border-radius: 35px;
-        margin-left: 28px;
-        margin-right: 34px;
-        .search-icon{
-            width: 25px;
-            height: 24px;
-            // background: #858F9A;
-            margin-left: 46px;
-            margin-right: 18px;
-        }
-        .ipt{
-            flex: 1;
-        }
+  }
+  .ipt-box {
+    @include flex(flex-start);
+    width: 454px;
+    height: 72px;
+    background: #f4f4f7;
+    border-radius: 35px;
+    margin-left: 28px;
+    margin-right: 34px;
+    .search-icon {
+      width: 25px;
+      height: 24px;
+      // background: #858F9A;
+      margin-left: 46px;
+      margin-right: 18px;
     }
-    .sign-box{
-        width: 67px;
-        height: 67px;
-        // background: #eee;
+    .ipt {
+      flex: 1;
     }
+  }
+  .sign-box {
+    width: 67px;
+    height: 67px;
+    // background: #eee;
+  }
 }
 // 轮播图
 .swiper-container {
-    width: 702px;
-    height: 244px;
-    transform: translateY(0);
-    background: #fff;
-    padding: 15px 24px ;
-    .swiper,.banner-img{
-        border-radius: 18px;
-        overflow: hidden;
-        width: 100%;
-        height: 100%;
-        // background-color: #eee;
-    }
+  width: 702px;
+  height: 244px;
+  transform: translateY(0);
+  background: #fff;
+  padding: 15px 24px;
+  .swiper,
+  .banner-img {
+    border-radius: 18px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    // background-color: #eee;
+  }
 }
 // 筛选
-.filter-box{
-    padding: 0 32px;
-    background-color: #fff;
-    .r-item{
-        margin-right: 68px;
-        font-size: 28px;
+.filter-box {
+  padding: 0 32px;
+  background-color: #fff;
+  .r-item {
+    margin-right: 68px;
+    font-size: 28px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #111e38;
+    line-height: 90px;
+    position: relative;
+    &.active {
+      font-size: 36px;
+      background-image: url("#{$baseImgUrl}index/xz@1x.png");
+      background-size: 50px 15px;
+      background-position: bottom center;
+      background-repeat: no-repeat;
+    }
+    .active-icon {
+      position: absolute;
+      width: 50px;
+      height: 15px;
+      // background: #0BD18F;
+      bottom: -18px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .default {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    @include flex(space-between);
+    .d-left,
+    .d-right {
+      @include flex(flex-start);
+      .d-item {
+        padding: 12px 22px;
+      }
+      .r-item {
+        padding: 12px 36px 12px 16px;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          right: 16px;
+          bottom: 15px;
+          border-width: 4px;
+          border-style: solid;
+          border-color: transparent #aeb2ba #aeb2ba transparent;
+        }
+        &.active::after {
+          border-color: transparent #0bd18f #0bd18f transparent;
+        }
+      }
+      .r-item,
+      .d-item {
+        font-size: 24px;
         font-family: PingFangSC-Medium, PingFang SC;
         font-weight: 500;
-        color: #111E38;
-        line-height: 90px;
-        position: relative;
-        &.active{
-            font-size: 36px;
-            background-image:url('#{$baseImgUrl}/index/xz@1x.png');
-            background-size: 50px 15px;
-            background-position: bottom center;
-            background-repeat: no-repeat;
+        color: #111e38;
+        height: 33px;
+        line-height: 33px;
+        background: #f5f6fa;
+        border-radius: 8px;
+        margin-right: 12px;
+        &.active {
+          background: #e5fbf4;
+          color: #0bd18f;
         }
-        .active-icon{
-            position: absolute;
-            width: 50px;
-            height: 15px;
-            // background: #0BD18F;
-            bottom: -18px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
+      }
     }
-    .default{
-        padding-top: 20px;
-        padding-bottom: 25px;
-        @include flex(space-between);
-        .d-left,.d-right{
-            @include flex(flex-start);
-            .d-item{
-                padding: 12px 22px;
-
-            }  
-            .r-item{
-                padding: 12px 36px 12px 16px;
-                position: relative;
-                &::after{
-                    content: "";
-                    position: absolute;
-                    right: 16px;
-                    bottom: 15px;
-                    border-width: 4px;
-                    border-style: solid;
-                    border-color: transparent #AEB2BA #AEB2BA transparent;
-                }
-                &.active::after{
-                    border-color: transparent #0BD18F #0BD18F transparent;
-                }
-            } 
-            .r-item,.d-item{
-                font-size: 24px;
-                font-family: PingFangSC-Medium, PingFang SC;
-                font-weight: 500;
-                color: #111E38;
-                height: 33px;
-                line-height: 33px;
-                background: #F5F6FA;
-                border-radius: 8px;
-                margin-right: 12px;
-                &.active{
-                    background: #E5FBF4;
-                    color: #0BD18F;
-                }
-            }
-            
-        }
-    }
+  }
 }
 
 // JobCard
-.job-box{
-    position: absolute;
+.job-box {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  top: 588px;
+  .job-content {
+    padding: 16px 16px 0 16px;
+    box-sizing: border-box;
     width: 100%;
     left: 0;
+<<<<<<< HEAD
     top: 578px; 
     bottom: 0;
     padding-top: 16px;
@@ -155,174 +163,182 @@
         width: 100%;
         height: 100%;
         overflow: scroll;
+=======
+    bottom: 0;
+    top: 578px;
+    .job-content {
+      padding: 16px 16px 0 16px;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      overflow: scroll;
+>>>>>>> ba95151351bb3bd2a8699561c29c2c394ea80cbb
     }
-    .job-card{
-        .company{
-            .r-btn{
-                border-radius: 17px 0px 0px 17px;
-                border: 0;
-                margin-right: -24px;
-            }
+    .job-card {
+      .company {
+        .r-btn {
+          border-radius: 17px 0px 0px 17px;
+          border: 0;
+          margin-right: -24px;
         }
+      }
     }
+  }
 }
 
 // 岗位
-.dailog{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 80vh;
-    border-radius: 23px 23px 0px 0px;
+.dailog {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80vh;
+  border-radius: 23px 23px 0px 0px;
+  box-sizing: border-box;
+  background-color: #fff;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  .dailog-title {
+    font-size: 40px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #000000;
+    line-height: 56px;
+    padding-top: 48px;
+    padding-bottom: 32px;
+    text-align: center;
     box-sizing: border-box;
-    background-color: #fff;
-    z-index:999;
-    display: flex;
-    flex-direction: column;
-    .dailog-title{
-        font-size: 40px;
-        font-family: PingFangSC-Medium, PingFang SC;
-        font-weight: 500;
-        color: #000000;
-        line-height: 56px;
-        padding-top: 48px;
-        padding-bottom: 32px;
+  }
+  .cancel {
+    font-size: 28px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #808999;
+    line-height: 40px;
+    position: absolute;
+    right: 32px;
+    top: 57px;
+  }
+  .dailog-content {
+    width: 100%;
+    flex: 1;
+    box-sizing: border-box;
+    padding-bottom: 32px;
+  }
+}
+.dailog-post {
+  .dailog-title {
+    height: 136px;
+  }
+  .dailog-content {
+    @include flex(flex-start, stretch);
+    .left-box {
+      width: 258px;
+      overflow-y: scroll;
+      .item {
+        padding: 24px 0;
         text-align: center;
-        box-sizing: border-box;
-    }
-    .cancel{
         font-size: 28px;
         font-family: PingFangSC-Regular, PingFang SC;
         font-weight: 400;
         color: #808999;
         line-height: 40px;
-        position: absolute;
-        right: 32px;
-        top: 57px;
+        &.active {
+          color: #00cc88;
+        }
+      }
     }
-    .dailog-content{
-        width: 100%;
-        flex: 1;
-        box-sizing: border-box;
-        padding-bottom: 32px;
+    .right-box {
+      width: 460px;
+      overflow-y: scroll;
+      background: #f5f6fa;
+      border-radius: 25px;
+      box-sizing: border-box;
+      padding-top: 8px;
+      .item {
+        padding: 24px 0 24px 64px;
+        font-size: 28px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #808999;
+        line-height: 40px;
+        &.active {
+          color: #00cc88;
+        }
+      }
     }
+  }
 }
-.dailog-post{
-    .dailog-title{
-        height: 136px;
+.dailog-filter {
+  .dailog-title {
+    height: 148px;
+  }
+  .type-box {
+    padding: 0 32px 50px 32px;
+    margin-right: -19px;
+    .item-title {
+      font-size: 32px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #14223b;
+      line-height: 45px;
+      margin-bottom: 24px;
     }
-    .dailog-content{
-        @include flex(flex-start,stretch);
-        .left-box{
-            width: 258px;
-            overflow-y: scroll;
-            .item{
-                padding: 24px 0;
-                text-align: center;
-                font-size: 28px;
-                font-family: PingFangSC-Regular, PingFang SC;
-                font-weight: 400;
-                color: #808999;
-                line-height: 40px;
-                &.active{                 
-                    color: #00CC88;
-                }
-            }
-        }
-        .right-box{
-            width: 460px;
-            overflow-y: scroll;
-            background: #F5F6FA;
-            border-radius: 25px;
-            box-sizing: border-box;
-            padding-top: 8px;
-            .item{
-                padding: 24px 0 24px 64px;
-                font-size: 28px;
-                font-family: PingFangSC-Regular, PingFang SC;
-                font-weight: 400;
-                color: #808999;
-                line-height: 40px;
-                &.active{                 
-                    color: #00CC88;
-                }
-            }
-        }
+    .item {
+      width: 216px;
+      height: 65px;
+      background: #f6f7fa;
+      border-radius: 10px;
+      @include flex();
+      font-size: 24px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #2d3950;
+      box-sizing: border-box;
+      margin-right: 19px;
+      margin-bottom: 20px;
+      &.active {
+        border: 1px solid #00cc88;
+        color: #00cc88;
+      }
     }
+  }
+  .dailog-content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    .btns {
+      height: 88px;
+      padding: 32px 32px 0;
+      .btn1 {
+        width: 236px;
+        height: 88px;
+        background: #f5f6fa;
+        border-radius: 28px;
+        font-size: 30px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #0f1d36;
+        line-height: 42px;
+        image {
+          width: 30px;
+          height: 30px;
+          margin-right: 20px;
+          // background-color: #eee;
+        }
+      }
+      .btn2 {
+        width: 432px;
+        height: 88px;
+        background: #00cc88;
+        border-radius: 28px;
+        color: #fff;
+      }
+    }
+    .types {
+      width: 100%;
+      flex: 1;
+      overflow-y: scroll;
+    }
+  }
 }
-.dailog-filter{
-    .dailog-title{
-        height: 148px;
-    }
-    .type-box{
-        padding: 0 32px 50px 32px;
-        margin-right: -19px;
-        .item-title{
-            font-size: 32px;
-            font-family: PingFangSC-Medium, PingFang SC;
-            font-weight: 500;
-            color: #14223B;
-            line-height: 45px;
-            margin-bottom: 24px;
-        }
-        .item{
-            width: 216px;
-            height: 65px;
-            background: #F6F7FA;
-            border-radius: 10px;
-            @include flex();
-            font-size: 24px;
-            font-family: PingFangSC-Medium, PingFang SC;
-            font-weight: 500;
-            color: #2D3950;
-            box-sizing: border-box;
-            margin-right: 19px;
-            margin-bottom: 20px;
-            &.active{
-                border: 1px solid #00CC88;
-                color: #00CC88;
-            }
-        }
-    }
-    .dailog-content{
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-        .btns{
-            height: 88px;
-            padding: 32px 32px 0;
-            .btn1{
-                width: 236px;
-                height: 88px;
-                background: #F5F6FA;
-                border-radius: 28px; 
-                font-size: 30px;
-                font-family: PingFangSC-Medium, PingFang SC;
-                font-weight: 500;
-                color: #0F1D36;
-                line-height: 42px;
-                image{
-                    width: 30px;
-                    height: 30px;
-                    margin-right: 20px;
-                    // background-color: #eee;
-                }
-            }
-            .btn2{
-                width: 432px;
-                height: 88px;
-                background: #00CC88;
-                border-radius: 28px;
-                color: #fff;
-            }
-        }
-        .types{
-            width: 100%;
-            flex: 1;
-            overflow-y: scroll;
-        }
-    }
-    
-}
-
-

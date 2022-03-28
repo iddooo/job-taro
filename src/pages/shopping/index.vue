@@ -1,19 +1,19 @@
 <template>
   <view class="shopping">
     <view class="shopping-top">
-      <view class="shopping-cent" @tap="navigateTo('mycent/index')">10</view>
-      <view class="shopping-info" @tap="navigateTo('mycent/index')">我的平台币</view>
+      <view class="shopping-cent" @tap="navigateTo('/shop/mycent/index')">10</view>
+      <view class="shopping-info" @tap="navigateTo('/shop/mycent/index')">我的平台币</view>
       <view class="shopping-btn-list">
-        <view class="shopping-btn" @tap="navigateTo('myorder/index')">
+        <view class="shopping-btn" @tap="navigateTo('/shop/myorder/index')">
           <view class="icon"></view>订单
         </view>
-        <view class="shopping-btn">
+        <view class="shopping-btn" @tap="navigateTo('/location/location/index')">
           <view class="icon"></view>地址
         </view>
-        <view class="shopping-btn" @tap="navigateTo('myscore/index')">
+        <view class="shopping-btn" @tap="navigateTo('/shop/myscore/index')">
           <view class="icon"></view>积分
         </view>
-        <view class="shopping-btn" @tap="navigateTo('myextension/index')">
+        <view class="shopping-btn" @tap="navigateTo('/shop/myextension/index')">
           <view class="icon"></view>推广
         </view>
       </view>
@@ -128,10 +128,10 @@ import './index.scss'
 definePageConfig({
   navigationBarTitleText: '牛犊梦商城',
   navigationBarBackgroundColor: '#00CC88',
-  navigationBarTextStyle: 'white'// 字体颜色
+  navigationBarTextStyle: 'white' // 字体颜色
 })
 Taro.setBackgroundColor({
-  backgroundColorTop: '#00CC88'// 顶部窗口的背景色为红
+  backgroundColorTop: '#00CC88' // 顶部窗口的背景色为红
 })
 
 export default {
@@ -170,9 +170,8 @@ export default {
       this.onlyTask = flag
     },
     navigateTo(url) {
-      console.log(url)
       Taro.navigateTo({
-        url: '/shop/' + url
+        url
       })
     },
     changeTabCode(code) {
