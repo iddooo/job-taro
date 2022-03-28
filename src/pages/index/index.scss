@@ -144,17 +144,10 @@
   width: 100%;
   left: 0;
   bottom: 0;
-  top: 588px;
-  .job-content {
-    padding: 16px 16px 0 16px;
-    box-sizing: border-box;
-    width: 100%;
-    left: 0;
-    top: 578px; 
-    bottom: 0;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    box-sizing: border-box;
+  top: 572px;
+  box-sizing: border-box;
+  padding-top: 16px;
+  padding-bottom: 16px;
     .job-content{
         box-sizing: border-box;
         padding-left: 16px;
@@ -164,6 +157,9 @@
         overflow: scroll;
     }
     .job-card {
+        &:last-of-type{
+            margin-bottom: 0;
+        }
       .company {
         .r-btn {
           border-radius: 17px 0px 0px 17px;
@@ -172,7 +168,6 @@
         }
       }
     }
-  }
 }
 
 // 岗位
